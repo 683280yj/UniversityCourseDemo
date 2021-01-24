@@ -1,0 +1,119 @@
+基本语法（修改表类型）：ALTER TABLE tablename MODIFY [COLUMN] column_definition [FIRST | AFTER col_name];
+基本语法（增加表字段）：ALTER TABLE tablename ADD [COLUMN] column_definition [FIRST | AFTER col_name];
+基本语法（删除表字段）：ALTER TABLE tablename DROP [COLUMN] col_name;
+基本语法（字段改名）：ALTER TABLE tablename CHANGE [COLUMN] old_col_name column_definition [FIRST | AFTER col_name];
+基本语法（修改字段排列顺序）：ALTER TABLE tablename  [ADD|MODIFY] col_name column_definition [FIRST | AFTER col_name]
+基本语法（更改表名）：ALTER TABLE tablename RENAME [TO] new_tablename
+
+select * from tb_car
+
+/*增加1列*/
+alter table tb_car ADD CAR_PRICE INT after CAR_NAME;/*在原有的表的结构上在增加一列*/
+
+/*在原有基础上进行表字段的修改*/
+alter table tb_car MODIFY CAR_PRICE varchar(4);/*在原有的表的结构上在增加一列*/
+
+/*删除某一列*/
+ALTER TABLE tb_car DROP  CAR_PRICE;
+
+insert into tb_car (CAR_NAME,CAR_DATE) values('奥迪',SYSDATE());
+
+insert into tb_car values(null,'宝马',SYSDATE());
+
+update tb_car set CAR_NAME='大众' where CAR_NAME='宝马'
+
+/*针对某一列进行去掉重复*/
+select distinct CAR_NAME from tb_car 
+
+
+
+/*每个人进来选择这选项的时候首先我问你，是不是要选择车的品牌*/
+
+select distinct CAR_NAME from tb_car
+
+select distinct CAR_SERVICE  from tb_car where CAR_NAME='大众'
+
+/*asc 生 desc降*/  /*不写的话是升序*/
+select * from tb_car order by CAR_PRICE
+
+   
+select * from tb_car limit 0,2
+
+select * from tb_car limit 2,2
+
+select * from tb_car limit 4,2
+/*公式当前页-1乘以每页的最大条数就是该页的起始偏移量*/
+select * from tb_car limit (1-1)*2,2
+
+/*求出价格最高的那一条数据信息*/
+select * from tb_car order by CAR_PRICE desc limit 0,1
+
+/*聚合函数来说查询的数据一般来说是唯一的(2)一般来说是针对的是某一个列*/
+select count(*) from tb_car /*一般来说配合分页*/
+
+select max(CAR_PRICE) from tb_car/*最大值*/
+
+select min(CAR_PRICE) from tb_car/*最小值*/
+
+select avg(CAR_PRICE) from tb_car/*平均值*/
+
+select sum(CAR_PRICE) from tb_car/*总和*/
+
+
+select max(CAR_PRICE),CAR_SERVICE from tb_car group by CAR_SERVICE
+
+
+/*有问题*/
+SELECT * from tb_car where CAR_PRICE >= (
+	SELECT avg(CAR_PRICE),CAR_SERVICE from tb_car GROUP BY CAR_SERVICE 
+)
+
+
+
+select * from tb_car 
+select * from tb_car_info
+
+select * from tb_car t1 left join tb_car_info t2 on t1.CAR_ID=t2.CAR_ID
+
+/*内连接*/
+select * from tb_car t1 inner join tb_car_info t2 on t1.CAR_ID=t2.CAR_ID
+
+select * from tb_car t1  join tb_car_info t2 on t1.CAR_ID=t2.CAR_ID
+
+
+
+
+insert into tb_car_info values(null,'ESDF345','进口',1);
+insert into tb_car_info values(null,'ADF3145','进口',2);
+insert into tb_car_info values(null,'BHUF347','进口',3);
+
+drop table   tb_car_info 
+create table tb_car_info(
+CAR_INFO_ID int  not null auto_increment primary key,
+CAR_INFO_CARD varchar(20) unique not null,
+CAR_INFO_TYPE varchar(6) not null,
+CAR_ID int 
+)
+
+insert into tb_car  values(null,'比亚迪',SYSDATE(),400,'清洗');
+
+update tb_car set CAR_PRICE=320 where CAR_ID=3
+/*分组之后高于平均价格的数据信息保养要高于400的数据，维修是要高于306的数据*/
+/*错误*/
+select CAR_NAME, CAR_PRICE,CAR_SERVICE from tb_car  where CAR_PRICE>=(select avg(CAR_PRICE) from tb_car) group by CAR_SERVICE;
+
+SELECT avg(CAR_PRICE),CAR_SERVICE from tb_car GROUP BY CAR_SERVICE 
+
+/*exits*/
+
+select * from tb_car as t1 where t1.CAR_PRICE>=(SELECT avg(CAR_PRICE) from tb_car t2 where t1.CAR_SERVICE=t2.CAR_SERVICE GROUP BY t2.CAR_SERVICE)
+
+/*针对分组后的数据进行筛选*/
+SELECT avg(CAR_PRICE),CAR_SERVICE from tb_car where CAR_DATE=str_to_date('2020-06-02','%Y-%m-%d')  GROUP BY CAR_SERVICE having avg(CAR_PRICE)>=350
+
+
+
+
+
+
+	
