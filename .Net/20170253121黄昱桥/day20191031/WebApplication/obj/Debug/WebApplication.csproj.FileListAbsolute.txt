@@ -1,0 +1,36 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\WebApplication.dll.config
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\WebApplication.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.BLL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.BLL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\bin\Test.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\obj\Debug\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\WebApplication.dll.config
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\WebApplication.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\WebApplication.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\Test.BLL.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\Test.Model.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\Test.DAL.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\Test.BLL.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\Test.Model.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\bin\Test.DAL.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\WebApplication\obj\Debug\WebApplication.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\obj\Debug\WebApplication.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\WebApplication.dll.config
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\WebApplication.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\WebApplication.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\Test.BLL.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\Test.Model.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\Test.DAL.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\Test.BLL.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\Test.Model.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\bin\Test.DAL.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\WebApplication\obj\Debug\WebApplication.pdb
