@@ -1,0 +1,48 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\WebApplication.dll.config
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\WebApplication.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.BLL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\UserInfo.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.BLL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\UserInfo.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\bin\Perject.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\obj\Debug\WebApplication.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\WebApplication.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\WebApplication.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\WebApplication.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\Perject.BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\UserInfo.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\Perject.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\Perject.BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\UserInfo.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\bin\Perject.DAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\WebApplication.dll.config
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\WebApplication.dll
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\WebApplication.pdb
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\Perject.BLL.dll
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\UserInfo.Model.dll
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\Perject.DAL.dll
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\Perject.BLL.pdb
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\UserInfo.Model.pdb
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\bin\Perject.DAL.pdb
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Administrator\Desktop\1213\day20191205\WebApplication\obj\Debug\WebApplication.pdb
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\obj\Debug\WebApplication.dll
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\WebApplication.dll.config
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\WebApplication.dll
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\WebApplication.pdb
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\Perject.BLL.dll
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\UserInfo.Model.dll
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\Perject.DAL.dll
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\Perject.BLL.pdb
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\UserInfo.Model.pdb
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\bin\Perject.DAL.pdb
+E:\、Net\Web(增删改查)\1213\day20191205\WebApplication\obj\Debug\WebApplication.pdb

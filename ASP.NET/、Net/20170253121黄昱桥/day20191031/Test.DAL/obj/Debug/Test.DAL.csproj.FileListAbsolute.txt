@@ -1,0 +1,21 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\bin\Debug\Test.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\obj\Debug\Test.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day20191031\Test.DAL\obj\Debug\Test.DAL.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.DAL.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.DAL.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.Model.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.Model.pdb
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\obj\Debug\Test.DAL.dll
+C:\Users\Administrator\Desktop\20170253121黄昱桥\day20191031\Test.DAL\obj\Debug\Test.DAL.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.DAL.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.DAL.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.Model.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\bin\Debug\Test.Model.pdb
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\obj\Debug\Test.DAL.dll
+E:\ASP.NET\20170253121黄昱桥\day20191031\Test.DAL\obj\Debug\Test.DAL.pdb

@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\obj\Debug\Perject.DAL.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\Perject.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\Perject.DAL.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\UserInfo.Model.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\bin\Debug\UserInfo.Model.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\obj\Debug\Perject.DAL.dll
+c:\users\administrator\documents\visual studio 2013\Projects\day1108\Perject.DAL\obj\Debug\Perject.DAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\bin\Debug\Perject.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\bin\Debug\Perject.DAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\bin\Debug\UserInfo.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\bin\Debug\UserInfo.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\obj\Debug\Perject.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\obj\Debug\Perject.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day20191205\Perject.DAL\obj\Debug\Perject.DAL.pdb

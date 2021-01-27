@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<font size="60"color="red">网易</font>	
+<font size="60">通行证</font>
+<fieldset id="">
+<legend>请填写注册信息</legend>
+&emsp;用户名：<input type="datetime" name="c1" id="c1" value="" /><font color="red" id="a1">由字母、数字、下划线、点、减号组成的4-18位字符，以数字开头或结尾</font><br>
+&emsp;&emsp;昵称：<input type="datetime" name="c2" id="c2" value="" /><font color="red" id="a2">包含汉字、字母、数字、下划线的4-20位字符，汉字占两个字符</font><br>
+&emsp;&emsp;邮箱：<input type="datetime" name="c3" id="c3" value="" /><font color="red" id="a3">邮箱账号@域名，如：good@tom.com、whj@sina.com.cn</font><br>
+&emsp;&emsp;密码：<input type="datetime" name="c4" id="c4" value="" /><font color="red" id="a4">由英文字母和数字组成的4-10位字符</font><br>
+确认密码：<input type="datetime" name="c5" id="c5" value="" /><font id="a5" color="red"></font><br>
+手机号码：<input type="datetime" name="c6" id="c6" value="" /><font color="red" id="a6">手机号由11位数字组成，且以13、15、18开头</font><br>
+&emsp;身份者：<input type="datetime" name="c7" id="c7" value="" /><font color="red" id="a7">由15位或18位数字组成</font><br>
+<input type="button" name="c8" id="c8" value="注册" onclick="cc()"/>
+</fieldset>
+</body>
+</html>
+<script type="text/javascript">
+var c1=document.getElementById("c1");
+var c2=document.getElementById("c2");
+var c3=document.getElementById("c3");
+var c4=document.getElementById("c4");
+var c5=document.getElementById("c5");
+var c6=document.getElementById("c6");
+var c7=document.getElementById("c7");
+var c8=document.getElementById("c8");
+var r1=/^(\w+\.*-*|\w+){4,18}$/;
+var r2=/([\w\u4e00-\u9fa5]){4,20}/;
+var r3=/^\w+@\w+\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2,3})?$/; 
+var r4=/[a-zA-Z0-9]{4,10}$/;
+var r6=/^[13|15|180-9]{11}$/;
+var r7=/[0-9]{15,18}/
+c1.onblur=function()
+{
+	if(r1.test(c1.value)==false)
+	{
+		this.value="";
+		a1.innerHTML="请输入：由字母、数字、下划线、点、减号组成的4-18位字符，以数字开头或结尾";
+	}
+	else
+	{
+		
+		a1.innerHTML="格式正确";
+		
+	}
+}
+c2.onblur=function()
+{
+	
+	if(r2.test(c2.value)==false)
+	{
+		this.value="";
+		a2.innerHTML="请输入：包含汉字、字母、数字、下划线的4-20位字符，汉字占两个字符";
+	}
+	else
+	a2.innerHTML="格式正确";
+}
+c3.onblur=function()
+{
+	
+	if(r3.test(c3.value)==false)
+	{
+		this.value="";
+		a3.innerHTML="请输入：邮箱账号@域名，如：good@tom.com、whj@sina.com.cn";
+	}
+	else
+	a3.innerHTML="格式正确";
+}
+c4.onblur=function()
+{
+	
+	if(r4.test(c4.value)==false)
+	{
+		this.value="";
+		a4.innerHTML="请输入：由英文字母和数字组成的4-10位字符";
+	}
+	else
+	a4.innerHTML="格式正确";
+}
+c5.onblur=function()
+{
+	if((c4.value)!=(c5.value))
+	{
+		this.value="";
+	    a5.innerHTML="两次密码不一致";
+	}
+	else
+	a5.innerHTML="格式正确";	
+}
+c6.onblur=function()
+{
+	
+	if(r6.test(c6.value)==false)
+	{
+		this.value="";
+		a6.innerHTML="请输入：手机号由11位数字组成，且以13、15、18开头";
+	}
+	else
+	a6.innerHTML="格式正确";
+}
+c7.onblur=function()
+{
+	
+	if(r7.test(c7.value)==false)
+	{
+		this.value="";
+		a7.innerHTML="请输入：由15位或18位数字组成";
+	}
+	else
+	a7.innerHTML="格式正确";
+}
+function cc()
+{
+	if((c1.value)&&(c2.value)&&(c3.value)&&(c4.value)&&(c5.value)&&(c6.value)&&(c7.value)!="")
+	alert("注册成功")
+	else
+	alert("注册失败")
+}
+</script>

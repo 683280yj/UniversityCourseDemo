@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\bin\Debug\Test.BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\bin\Debug\Test.BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\bin\Debug\Test.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\bin\Debug\test.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\bin\Debug\Test.DAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\bin\Debug\test.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\obj\Debug\Test.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\obj\Debug\Test.BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.BLL\obj\Debug\Test.BLL.pdb

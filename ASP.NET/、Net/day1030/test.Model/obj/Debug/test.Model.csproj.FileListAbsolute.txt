@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\test.Model\bin\Debug\test.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\test.Model\bin\Debug\test.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\test.Model\obj\Debug\test.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\test.Model\obj\Debug\test.Model.pdb
+C:\Users\Administrator\Desktop\day1030\test.Model\bin\Debug\test.Model.dll
+C:\Users\Administrator\Desktop\day1030\test.Model\bin\Debug\test.Model.pdb
+C:\Users\Administrator\Desktop\day1030\test.Model\obj\Debug\test.Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\day1030\test.Model\obj\Debug\test.Model.dll
+C:\Users\Administrator\Desktop\day1030\test.Model\obj\Debug\test.Model.pdb

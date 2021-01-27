@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>任务一（背景色）</title>
+		<style type="text/css" >
+			
+		</style>
+	</head>
+	<body id="body">
+		请选择背景颜色:
+		<select name="" id="changecolor">
+			<option value="红色">红色</option>
+			<option value="橙色">橙色</option>
+			<option value="黄色">黄色</option>
+			<option value="绿色">绿色</option>
+			<option value="青色">青色</option>
+			<option value="蓝色">蓝色</option>
+			<option value="紫色">紫色</option>
+		</select>
+	</body>
+	<script type="text/javascript">
+		var changecolor=document.getElementById("changecolor");
+		changecolor.onclick=function()
+		{
+			var a=changecolor.value;
+			if(a=="红色")
+			{
+				this.style.background="红色";
+				document.bgColor="red"
+		    }else
+		    if(a=="橙色")
+			{
+				this.style.background="橙色";
+				document.bgColor="orange"
+			}else
+			if(a=="黄色")
+			{
+				this.style.background="黄色";
+				document.bgColor="yellow"
+			}else
+			if(a=="绿色")
+			{
+				this.style.background="绿色";
+				document.bgColor="green"
+			}else
+			if(a=="青色")
+			{
+				this.style.background="青色";
+				document.bgColor="powderblue"
+			}else
+			if(a=="蓝色")
+			{
+				this.style.background="蓝色";
+				document.bgColor="blue"
+			}else
+			if(a=="紫色")
+			{
+				this.style.background="紫色";
+				document.bgColor="purple"
+			}
+		}
+	</script>
+</html>

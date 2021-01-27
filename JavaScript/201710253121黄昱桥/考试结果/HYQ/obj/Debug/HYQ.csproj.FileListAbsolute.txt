@@ -1,0 +1,15 @@
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\bin\Debug\HYQ.exe.config
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\bin\Debug\HYQ.exe
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\bin\Debug\HYQ.pdb
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\obj\Debug\HYQ.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\obj\Debug\HYQ.Form1.resources
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\obj\Debug\HYQ.Properties.Resources.resources
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\obj\Debug\HYQ.csproj.GenerateResource.Cache
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\obj\Debug\HYQ.exe
+d:\documents\visual studio 2012\Projects\HYQ\HYQ\obj\Debug\HYQ.pdb
+C:\Users\Administrator\Desktop\201710253121黄昱桥\HYQ\HYQ\bin\Debug\HYQ.exe.config
+C:\Users\Administrator\Desktop\201710253121黄昱桥\HYQ\HYQ\obj\Debug\HYQ.exe
+C:\Users\Administrator\Desktop\201710253121黄昱桥\HYQ\HYQ\obj\Debug\HYQ.pdb
+C:\Users\Administrator\Desktop\201710253121黄昱桥\考试结果\HYQ\bin\Debug\HYQ.exe.config
+C:\Users\Administrator\Desktop\201710253121黄昱桥\考试结果\HYQ\obj\Debug\HYQ.exe
+C:\Users\Administrator\Desktop\201710253121黄昱桥\考试结果\HYQ\obj\Debug\HYQ.pdb

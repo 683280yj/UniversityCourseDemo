@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+	
+	</style>
+
+</head>
+<body>
+	<input type="text" name="" id="" value="" />
+	<select name="" id="sel">
+		<option value="">请选择</option>
+		<option value="http://www.baidu.com">baidu</option>
+		<option value="http://www.163.com">163</option>
+		<option value="http://www.bing.com">bing</option>
+	</select>
+	<div>div1111</div>
+	<a href="http://www.baidu.com" id="a">baidu</a>
+	<form action="123.html" method="post" onsubmit="return fun()" >
+		<input type="text" name="" id="user" value="" />
+		<input type="submit" value=""/>
+	</form>
+	
+</body>
+</html>
+<script type="text/javascript">
+	/*
+	var user=document.getElementById("user");
+	user.onfocus=function(){
+		this.style.color="orange";
+		this.style.background="#ddd"
+	}
+	user.onblur=function(){
+		if (this.value.length<6) {
+			alert("输入字符不能少于6位");
+		}
+	}
+	
+	var user=document.getElementById("user");
+	window.onload=function(){
+		user.focus();
+	}
+	
+	var user=document.getElementById("user");
+	user.onchange=function(){
+		alert("hello");
+	}
+	
+	var sel=document.getElementById("sel");
+	sel.onchange=function(){
+		if(this.value!=""){
+			open(this.value);
+		}
+	}
+	
+	var user=document.getElementById("user");
+	user.onselect=function(){
+		alert("hello");
+	}
+	window.onload=function(){
+		user.select();
+	}
+	
+	window.onkeydown=function(e){
+//		alert(123)
+//		alert(arguments.length)
+//		alert(arguments[0])
+//		alert(e.type)
+//		alert(e.keyCode)   //keyCode 键码
+		if (e.keyCode==13) {
+			alert("hello");
+		}
+	}
+	
+	var a=document.getElementById("a");
+	a.onclick=function(e){
+//		return false;
+		e.returnValue=false;
+	}
+	*/
+	function fun(){
+		var user=document.getElementById("user");
+		if (user.value.length<6) {
+			alert("请输入不能小于6位");
+			return false;
+			
+		}
+	}
+	
+</script>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>任务二（邮箱注册）</title>
+	</head>
+	<body>
+		<h1>邮箱注册</h1>
+		注册邮箱:<input type="text" name="exa" id="exa1" value=""/>
+		<br/>
+		输入密码:<input type="password" name="exa" id="exa2" value=""/>
+		<br/>
+		确认密码:<input type="password" name="exa" id="exa3" value=""/>
+		<input type="button" value="注册邮箱" onclick="lll()" />
+	</body>
+	<script type="text/javascript">
+		function lll()
+		{
+			var exa1=document.getElementById("exa1").value;
+			var exa2=document.getElementById("exa2").value;
+			var exa3=document.getElementById("exa3").value;
+			
+			var i=exa1.length;
+			var j;
+			var s1=0,s2=0;
+			if(exa1.length==0)
+			{
+				alert("邮箱不能为空");
+				return false;
+			}else
+			if(exa2.length==0)
+			{
+				alert("密码不能为空");
+				return false;
+			}
+			for(j=0;j<i;j++)
+			{
+				if(exa1[j]=="@")s1=1;
+				if(exa1[j]==".")s2=1;
+			}
+			if(s1!=1&&s2!=1)
+			{
+				alert("邮箱格式错误");
+				return false;
+			}else
+			if(exa2!=exa3)
+			{
+				alert("你输入的密码不一致");
+				return false;
+			}
+			else{
+				alert("注册成功");
+				return false;
+			}
+		}
+		window.onkeydown=function(event)
+		{
+			//alert(event.keyCode);
+			if(event.keyCode==13)
+			{
+				lll();
+			}
+			if(event.keyCode==27)
+			{
+				window.close();
+			}
+		}	
+	</script> 
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>zz</title>
+	
+</head>
+<body>
+	<font size="60" face="微软雅黑" color="red"><i><b>网易</b></i></font>	
+	<font size="40">通行证</font>
+	<form>
+		<fieldset id="">
+		<legend>请填写注册信息</legend>
+		&emsp;用户名：<input type="text" name="a" onblur="fun()" id="a" value=""/><font color="red" id="y1">由字母、数字、下划线、点、减号组成的4-18位字符，以数字、字母开头或结尾</font><br><br>
+		&emsp;&emsp;昵称：<input type="text" name="b" id="b" value="" onblur="fun1()" /><font color="red" id="y2">包含汉字、字母、数字、下划线的4-20位字符汉字占两个字符</font><br><br>
+		&emsp;&emsp;邮箱：<input type="text" name="c" id="c" value="" onblur="fun2()"/><font color="red" id="y3">邮箱账号·域名，如：good@tom.com、whj@sina.com.cn</font><br><br>
+		&emsp;&emsp;密码：<input type="password" name="d" id="d" value="" onblur="fun3()"/><font color="red" id="y4">由英文字母和数字组成的4-10位字符</font><br><br>
+		确认密码：<input type="password" name="e" id="e" value="" onblur="fun4()"/><font color="red" id="y5"></font><br><br>
+		手机号码：<input type="text" name="f" id="f" value="" onblur="fun5()"/><font color="red" id="y6">手机号由11位数字组成，且以13、15、18开头</font><br><br>
+		&emsp;身份证：<input type="text" name="g" id="g" value="" onblur="fun6()"/><font color="red" id="y7">由15位或18位数字组成</font><br><br>
+		&emsp;&emsp;<input type="button" name="h"  id="h" value="注册账户" onclick="cc()">
+		</fieldset>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+        var a=document.getElementById("a").value;
+        var b=document.getElementById("b").value;
+        var c=document.getElementById("c").value;
+        var d=document.getElementById("d").value;
+        var e=document.getElementById("e").value;
+        var f=document.getElementById("f").value;
+        var g=document.getElementById("g").value;
+        var h1=/^(\w+\.*-*|\w+){4,18}$/;
+        var h2=/\w[\u4e00-\u9fa5]{4,20}/;
+        var h3=/^\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?$/;
+        var h4=/^[a-zA-Z0-9]{4,10}$/;
+        var h6=/^[13][15][180-9]{11}$/;
+        var h7=/[0-9]{15,18}/;
+        function fun()
+        {
+        	if(h1.test(a)==false)
+			{
+				this.value="";
+				y1.innerHTML="用户名输入错误";
+			}
+			else
+			{
+			y1.innerHTML="正确";
+			}
+        }
+		function fun1()
+		{
+			if(h2.test(b)==false)
+			{
+				this.value="";
+				y2.innerHTML="昵称输入错误";
+			}
+			else
+			{
+			y2.innerHTML="正确";
+			}
+		}
+		function fun2()
+		{
+			if(h3.test(c)==false)
+			{
+				this.value="";
+				y3.innerHTML="邮箱输入错误";
+			}
+			else
+			{
+			y3.innerHTML="正确";
+			}
+		}
+		function fun3()
+		{
+			if(h4.test(d)==false)
+			{
+				this.value="";
+				y4.innerHTML="密码输入错误";
+			}
+			else
+			{
+			y4.innerHTML="正确";
+			}
+		}
+		function fun4()
+		{
+			if(d!=e)
+			{
+				this.value="";
+				y5.innerHTML="两次密码不一致";
+			}
+			else
+			{
+			y5.innerHTML="正确";
+			}
+		}
+		function fun5()
+		{
+			if(h6.test(f)==false)
+			{
+				this.value="";
+				y6.innerHTML="手机号输入错误";
+			}
+			else
+			{
+			y6.innerHTML="正确";
+			}
+		}
+		function fun6()
+		{
+			if(h7.test(g)==false)
+			{
+				this.value="";
+				y7.innerHTML="身份证输入错误";
+			}
+			else
+			{
+			y7.innerHTML="正确";
+			}
+		}
+		function cc(){
+			if((c1.value)&&(c2.value)&&(c3.value)&&(c4.value)&&(c5.value)&&(c6.value)&&(c7.value)!="")
+			alert("注册成功")
+			else
+			alert("注册失败")
+		}	
+</script>

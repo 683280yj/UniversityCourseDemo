@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			ul,ol{
+				list-style: none;
+			}
+			#aa{
+				/*border: 1px solid red;*/
+				/*display: none;*/
+			}
+			.zhuce{
+				/*border: 1px solid blue;*/
+				/*padding-left: 100px;*/
+				height: 50px;
+			}
+			.qianzi{
+				font-size: 16px;
+				width: 100px;
+				text-align: right;
+				/*border: 1px solid orange;*/
+				color: grey;
+				float: left;
+			}
+			.inputkuang{
+				/*border: 1px solid orange;*/
+				
+				float: left;
+			}
+			.inputkuang input{
+				
+				width: 200px;
+			}
+			.fujia{
+				
+				float: left;
+				font-size: 10px;
+				text-align: center;
+				margin-top: 3px;
+				margin-left: 5px;
+				color: black;
+			}
+			#querenanniu{
+				margin: 20px 100px ;
+				
+			}
+			#querenanniu input{
+				height: 50px;
+				width: 150px;
+				background: orange;
+				color: white;
+			}
+			#tabxuan {
+				
+				margin-left: 50px;
+				margin-bottom: 30px;
+			}
+			#youxianga {
+				background: orange;
+				color: white;
+			}
+			#shoujia {
+				background: black;
+				color: white;
+				
+			}
+			#tijiao{
+				border-radius:100px ;
+			}
+			#yanzhengma{
+				width: 80px;
+				float: left;
+				/*border: 1px solid orange;*/
+			}
+			#aa1{
+				display: none;
+			}
+			h2{
+				color:orange;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>注册新用户</h2>
+		<div id="tabxuan">
+				<input type="button" name="" id="youxianga" value="邮箱注册" />
+				<input type="button" name="" id="shoujia" value="手机注册" />
+			
+		</div>
+		<div id="aa" >
+			<div class="zhuce">
+				<div  class="qianzi">邮箱:</div>
+				<input type="text" name="kuang" id="youxiang" value="" class="kuangc"/>推荐使用qq邮箱
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">用户名:</div>
+				<input type="text" name="kuang" id="yonghuming" value="" class="kuangc"/>4-16字符，不能使用数字
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">创建密码:</div>
+				<div class="inputkuang">
+					<input type="password" id="mm1" name="kuang" class="kuangc"/>6-32字符，可使用字母数字
+				</div>	
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">确认密码:</div>
+				<div class="inputkuang">
+					<input type="password" id="mm2" name="kuang" class="kuangc"/>请再次输入密码
+				</div>	
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">所在城市:</div>
+				<div class="inputkuang">
+					<select name="chengshi">
+						<option value="" selected>--省--</option>
+						<option value="" >湖北省</option>
+						<option value="" >广东省</option>
+						<option value="" >四川省</option>
+						<option value="" >福建省</option>
+						<option value="" >江西省</option>
+					</select>
+					<select name="chengshi">
+						<option value="" selected>--市区--</option>
+						<option value="" >湖北省</option>
+						<option value="" >广东省</option>
+						<option value="" >四川省</option>
+						<option value="" >福建省</option>
+						<option value="" >江西省</option>
+					</select>
+				</div>		
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">验证码:</div>
+				<div class="inputkuang">
+				 	<input type="text" name="kuang" id="yanzhengma" value="" class="kuangc"/><img src="1.png" alt="" />
+				</div>	
+			</div>
+			<img src="register.jpg" alt="" />
+		</div>
+		<div id="aa1" >
+			
+			<div class="zhuce">
+				<div  class="qianzi">手机号码:</div>
+				<div class="inputkuang">
+					<input type="text" name="kuang" id="youxiang" value="" class="kuangc"/>用于登陆，找回密码，不会公开
+				</div>	
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">短信验证码:</div>
+				<div class="inputkuang">
+				 	<input type="text" name="kuang" id="yanzhengma" value="" class="kuangc"/>请输入手机收到的验证码
+				</div>
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">创建密码:</div>
+				<div class="inputkuang">
+					<input type="password" id="mm1" name="kuang" class="kuangc"/>6-32字符，可使用字母、数字、符号
+				</div>	
+			</div>
+			<div class="zhuce">
+				<div  class="qianzi">确认密码:</div>
+				<div class="inputkuang">
+					<input type="password" id="mm2" name="kuang" class="kuangc"/>请再次输入密码
+				</div>	
+			</div>
+			<img src="register.jpg" alt="" id="tijiao"   class="anniu"/>
+		</div>
+		<div id="hh1">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var tijiao=document.getElementById("tijiao");
+	tijiao.onmouseover=function(){
+		this.style.background="red";
+		
+	}
+	tijiao.onmouseout=function()
+	{
+		this.style.background="orange";
+	}
+	
+	var shouji=document.getElementById("shoujia");
+	var youxiang=document.getElementById("youxianga");
+	var aa=document.getElementById("aa");
+	var aa1=document.getElementById("aa1");
+	var newNode;
+	shouji.onclick=function(){
+		youxiang.style.background="white";
+		shouji.style.background="orange";
+		aa.style.display="none";
+		aa1.style.display="block";
+	}
+	youxiang.onclick=function(){
+		shouji.style.background="white";
+		youxiang.style.background="orange";
+		aa1.style.display="none";
+		aa.style.display="block";	
+	}
+</script>

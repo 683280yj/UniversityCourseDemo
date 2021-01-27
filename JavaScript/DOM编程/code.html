@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		#box{
+			color: red;
+			font-size: 78px;
+		}
+		.box1{
+			border: 1px solid red;
+			background: olive;
+		}
+	</style>
+
+</head>
+<body>
+	<!--<input type="button" onclick="close()" value="btn" />-->
+	<img src="girl_1.gif" alt="" id="img" />
+	<br />
+	<input type="button" id="start" value="start" />
+	<input type="button" id="stop" value="stop" />
+	<a href="http://www.baidu.com">baidu</a>
+	<div id="div123">div5345645</div>
+	<select name="" id="sel">
+		<option value="">请选择</option>
+		<option value="http://www.baidu.com">baidu</option>
+		<option value="http://www.163.com">163</option>
+		<option value="http://www.bing.com">bing</option>	
+	</select>
+	<div>
+		<input type="text" name="user" value="" />
+		<input type="text" name="user" value="" />
+	</div>
+	
+	
+	<input type="text" name="user" value="" />
+	<input type="text" name="user" value="" />
+</body>
+</html>
+<script type="text/javascript">
+	var div=document.getElementsByTagName("div")[1];
+	var box=div.getElementsByTagName("input");
+	box[1].style.color="red";
+	
+	/*
+	var box=document.getElementsByTagName("input");
+	box[3].style.color="red";
+//	alert(box)
+
+	
+	
+	var user=document.getElementsByName("user");
+//	alert(user);
+	user[0].style.color="red";
+	
+	/*
+	var div=document.getElementById("div123");
+	div.id="box";
+	div.title="我是DIV";
+	div.className="box1";
+	div.innerHTML='<img src="girl_1.gif" alt="" id="img" />'
+//	div.innerText="<em>不要玩手机</em>"
+//	div.innerHTML="<em>不要玩手机</em>"
+//	alert(div.innerHTML)
+//	div.innerText="JS学习";
+//	alert(div.innerText)
+//	alert(div.id)
+//	alert(div)
+	
+	
+	document.getElementById("sel").onchange=function(){
+		if (this.value!="") {
+			location.href=this.value;
+		}
+	}
+	
+	
+	document.getElementById("div").onclick=function(){
+//		history.forward();
+//		history.go("http://www.baidu.com")
+		alert(location.href)
+	}
+	
+	
+//	alert("hello");
+	window.alert("hello")	
+	
+	var box=prompt("请输入姓名","例如：张三");
+	alert("您输入的姓名是："+box)
+	
+	
+	var box=confirm("请选择");
+	if (box) {
+		alert("请选择的是确定");
+	}
+	
+	window.onkeydown=function(e){
+		if (e.keyCode==27) {
+			window.close();
+		}
+	}
+	
+	open("http://www.baidu.com","baidu","height=300,width=300")
+	
+	
+	function fun(){
+		alert("hello");
+	}
+	setTimeout("fun()",3000);
+	setTimeout(fun,3000);
+	
+	
+	var box=setTimeout(function(){
+		alert("hello")
+	},3000)
+	clearTimeout(box)
+	
+	setInterval(function(){
+		alert(1)
+	},3000)
+	
+	var img=document.getElementById("img");
+	var start=document.getElementById("start");
+	var stop=document.getElementById("stop");
+	var index=1;
+	var box;
+	start.onclick=function(){
+		box=setInterval(function(){
+			index++;
+			if (index>=5) {
+				index=1;
+			}
+			img.src="girl_"+index+".gif";
+		},200)
+	}
+	stop.onclick=function(){
+		clearInterval(box)
+	}
+	*/
+</script>

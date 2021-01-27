@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css" >
+			
+		</style>
+	</head>
+	<body>
+		<input type="button" value="邮箱注册" onclick="function()" />
+		<input type="button" value="手机注册" onclick="function()" />
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱:<input type="text" name="exa" id="exa1" value=""/>推荐使用qq邮箱
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名:<input type="text" name="exa" id="exa2" value=""/>4~16字符，不能包含数字
+		<br/>
+		&nbsp;创建密码:<input type="text" name="exa" id="exa3" value=""/>6~32字符，可使用字母、数字、符号
+		<br/>
+		&nbsp;确认密码:<input type="text" name="exa" id="exa4" value=""/>请再次输入密码
+		<br/>
+		所在城市:
+		<select name="" id="changelcity">
+			
+			<option value="湖北省">湖北省</option>
+			<option value="湖南省">湖南省</option>
+			<option value="山东省">山东省</option>
+			<option value="江西省">江西省</option>
+			<option value="河北省">河北省</option>
+		</select>
+		<select name="" id="changescity">
+			
+			<option value="武汉市">武汉市</option>
+			<option value="长沙市">长沙市</option>
+			<option value="济南市">济南市</option>
+			<option value="南昌市">南昌市</option>
+			<option value="石家庄市">石家庄市</option>
+		</select>
+		<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;验证码:<input type="text" name="exa5" id="exa1" value=""/>
+		<div>
+			<input type="button" value="同意以上条款并注册" onclick="function()" />《美淘网用户协议》
+			<!--<ul>
+			<li><a href="#">首页</a></li>
+			<li id="li"><a href="#">产品</a></li>
+			<li><a href="#">新闻</a></li>
+		    </ul>-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		var changelcity=document.getElementById("changelcity");
+		var changescity=document.getElementById("changescity");
+		changescity.onclick=function()
+		{
+			var a=changelcity.value;
+			if (a=="湖北省")
+			{
+				this.style.changescity="武汉市";
+				document.changescity="武汉市";
+			}else
+			if (a=="湖南省")
+			{
+				this.style.changescity="长沙市";
+				document.changescity="长沙市";
+			}else
+			if (a=="山东省")
+			{
+				this.style.changescity="济南市";
+				document.changescity="济南市";
+			}else
+			if (a=="江西省")
+			{
+				this.style.changescity="南昌市";
+				document.changescity="南昌市";
+			}else
+			if (a=="河北省")
+			{
+				this.style.changescity="石家庄市";
+				document.changescity="石家庄市";
+			}
+		}
+		
+		var div=document.getElementsByTagName("div")[0];
+	    var b=div.getElementsByTagName("b");
+	    for (var i=0;i<b.length;i++) {
+		b[i].onmouseover=function(){
+			this.style.background="orange";
+		}
+		b[i].onmouseout=function(){
+			this.style.background="#ccc";
+		}
+	}
+		
+		
+		
+		
+	</script> 
+</html>

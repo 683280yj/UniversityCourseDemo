@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<fieldset id="">
+<legend>请填写注册信息</legend>
+&emsp;用户名：<input type="datetime" name="c1" id="c1" value="" /><font color="red">由字母、数字、下划线、点、减号组成的4-18位字符，以数字开头或结尾</font><br>
+&emsp;&emsp;昵称：<input type="datetime" name="c2" id="c2" value="" /><font color="red">包含汉字、字母、数字、下划线的4-20位字符，汉字占两个字符</font><br>
+&emsp;&emsp;邮箱：<input type="datetime" name="c3" id="c3" value="" /><font color="red">邮箱账号@域名，如：good@tom.com、whj@sina.com.cn</font><br>
+&emsp;&emsp;密码：<input type="datetime" name="c4" id="c4" value="" /><font color="red">由英文字母和数字组成的4-10位字符</font><br>
+确认密码：<input type="datetime" name="c5" id="c5" value="" /><br>
+手机号码：<input type="datetime" name="c6" id="c6" value="" /><font color="red">手机号由11位数字组成，且以13、15、18开头</font><br>
+&emsp;身份者：<input type="datetime" name="c7" id="c7" value="" /><font color="red">由15位或18位数字组成</font><br>
+<input type="button" name="c8" id="c8" value="注册" onclick="cc()"/>
+</fieldset>
+</body>
+</html>
+<script type="text/javascript">
+var c1=document.getElementById("c1");
+c1.onblur=function()
+{
+	
+	if(c1.value!="111")
+	{
+		alert("错误，请重新输入！")
+	}
+}
+
+/*var c2=document.getElementById("c2");
+var c3=document.getElementById("c3");
+var c4=document.getElementById("c4");
+var c5=document.getElementById("c5");
+var c6=document.getElementById("c6");
+var c7=document.getElementById("c7");
+var c8=document.getElementById("c8");
+c1.onblur=function()
+{
+	if(c1.="111")
+	{
+		alert("输入错误！")
+	}
+}*/
+function cc()
+{
+	alert("注册成功")
+}
+</script>

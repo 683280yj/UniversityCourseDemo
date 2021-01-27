@@ -1,0 +1,22 @@
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\bin\Debug\201710253121HYQ.exe.config
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\bin\Debug\201710253121HYQ.exe
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\bin\Debug\201710253121HYQ.pdb
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\201710253121HYQ.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\_201710253121HYQ.Form1.resources
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\_201710253121HYQ.Form2.resources
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\_201710253121HYQ.Form3.resources
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\_201710253121HYQ.Properties.Resources.resources
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\201710253121HYQ.csproj.GenerateResource.Cache
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\201710253121HYQ.exe
+d:\documents\visual studio 2012\Projects\201710253121HYQ\201710253121HYQ\obj\Debug\201710253121HYQ.pdb
+E:\C#\作业（未完）\201710253121HYQ\bin\Debug\201710253121HYQ.exe.config
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\201710253121HYQ.exe
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\201710253121HYQ.pdb
+E:\C#\作业（未完）\201710253121HYQ\bin\Debug\201710253121HYQ.exe
+E:\C#\作业（未完）\201710253121HYQ\bin\Debug\201710253121HYQ.pdb
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\201710253121HYQ.csprojResolveAssemblyReference.cache
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\_201710253121HYQ.Form1.resources
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\_201710253121HYQ.Form2.resources
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\_201710253121HYQ.Form3.resources
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\_201710253121HYQ.Properties.Resources.resources
+E:\C#\作业（未完）\201710253121HYQ\obj\Debug\201710253121HYQ.csproj.GenerateResource.Cache

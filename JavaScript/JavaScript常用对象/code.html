@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		
+		
+		
+	</style>
+
+</head>
+<body>
+	<!--<input type="text" /> 5-10
+	<p></p>
+	<h1>h1</h1>
+	<input type="button" onclick="fun()" />
+	<img src="flower1.jpg" alt="" />-->
+</body>
+</html>
+<script type="text/javascript">
+	/*
+	var day=new Date();  /// new开辟内存空间    Date()构造函数
+	//alert(day)    //Wed May 29 2019 14:10:54 GMT+0800 (中国标准时间)
+//	alert(day.getDay())
+//	alert(day.getMonth())
+//	alert(day.getTime())
+
+	var day=new Date("dec 12,2019");
+	alert(day)
+	
+	function fun(){
+		var day=new Date();
+		var h=day.getHours();
+		var m=day.getMinutes();
+		var s=day.getSeconds();
+		document.getElementsByTagName("div")[0].innerHTML=h+":"+m+":"+s
+	}
+	fun();
+	setInterval(fun,1000);
+	
+	var day=new Date();
+	var day2=new Date("dec 25,2019")
+	var s=day2.getTime()-day.getTime();
+	var d=s/(1000*60*60*24);
+	document.write("距离圣诞节还有:"+Math.floor(d)+"天");
+	
+	
+//	alert(Math.abs(-2))
+//	alert(Math.pow(2,3))
+	alert(Math.sqrt(9))
+	
+	
+	
+	//alert(Math.ceil(Math.random()*10))  // 0-10
+	//alert(Math.floor(Math.random()*10+1))		  //1-10//1-10
+	var num=Math.ceil(Math.random()*5+5);
+	function fun(){
+		var val=document.getElementsByTagName("input")[0].value;
+		if (val==num) {
+			alert("猜对了")
+		} else if(val>num){
+			alert("猜大了")
+		}else{
+			alert("猜小了");
+		}
+		
+	}
+	
+
+	function fun(){
+		var r=Math.ceil(Math.random()*255);
+		var g=Math.ceil(Math.random()*255);
+		var b=Math.ceil(Math.random()*255);
+		document.getElementsByTagName("h1")[0].style.color="rgb("+r+","+g+","+b+")";
+	}
+	
+	var img=new Image();
+	img.src="flower2.jpg";
+	document.getElementsByTagName("img")[0].src=img.src;
+	
+	var arr=new Array();
+	arr[0]=10;
+	arr[1]=function(){};
+	arr[2]={};
+	alert(arr[1])
+
+	var arr=new Array(4);
+	alert(arr.length)
+		
+	var arr=new Array(4,5,7);	
+	alert(arr.length)
+	
+	var arr=[4,function(){},7];
+	arr[3]="hello";
+	alert(arr.length)
+	
+	var arr=new Array(1);
+	arr[0]=5;
+	arr[1]=10;
+	alert(arr[1])
+	
+	var arr=[5,1,3,7,10]
+	function fun(a,b){
+//		return a-b;   升序
+		return b-a;
+	}
+	arr.sort(fun);
+	for (var i=0;i<arr.length;i++) {
+		document.write(arr[i]+"<br>")
+	}
+	
+	var arr=[5,1,3,7,10]
+	arr.reverse();
+	for (var i=0;i<arr.length;i++) {
+		document.write(arr[i]+"<br>")
+	}
+	
+	var person=new Object();
+	person.name="zhangsan";
+	person.age=18;
+	person.tell=function fun(){
+		alert("hello");
+	}
+	alert(person.name);
+	person.tell();
+	
+	
+	var per={
+		"name":"zhangsan",
+		"age":18,
+		"tell":function(){
+			alert('hello')
+		}
+	};
+//	alert(per.name)
+//	per.tell()
+
+	var per2={
+		"name":"lisi",
+		"age":20,
+		"tell":function(){
+			alert('hello')
+		}
+	};
+	var per3={
+			"name":"wangwu",
+			"age":25,
+			"tell":function(){
+				alert('hello')
+			}
+		};
+	
+	function Person(name,age){
+		this.name=name;
+		this.age=age;
+		this.tell=function(){
+			alert("hello");
+		}	
+	}
+	var per=new Person("张三",18);
+	per.tell()
+	alert(per.name)
+	
+	var per2=new Person("lisi",20);
+	per.tell()
+	*/
+	
+	var per={
+		"name":"zhangsan",
+		"age":18,
+		"tell":function(){
+			alert('hello')
+		}
+	};
+//	for (var i in per) {
+//		alert(i)
+//	}
+
+
+//	var n=per.name;
+//	var a=per.age;
+//	alert(n)
+//	alert(a)
+	
+	with(per){
+		var n=name;
+		var a=age;
+	}
+	alert(n)
+	alert(a)
+</script>

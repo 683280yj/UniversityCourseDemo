@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>任务三（图片切换）</title>
+		<style type="text/css">
+		</style> 
+	</head>
+	<body>
+		<img src="../任务三/flower1.jpg" alt="" id="img" />
+		<br />
+		<input type="button" name="pre" id="pre" value="上一张"/>
+		<input type="button" name="pre" id="next" value="下一张"/>
+	</body>
+	<script type="text/javascript">
+		var img=document.getElementById("img");
+		var pre=document.getElementById("pre");
+		var next=document.getElementById("next");
+		index=1;
+		next.onclick=function()
+		{
+			index++;
+			if(index>=5)
+			{
+				index=4;
+				alert("最后一张");
+			}
+			img.src="../任务三/flower"+index+".jpg";
+		}
+		pre.onclick=function()
+		{
+			index--;
+			if(index<=0)
+			{
+				index=1;
+				alert("最后一张");
+			}
+			img.src="../任务三/flower"+index+".jpg";
+		}
+	</script>
+</html>

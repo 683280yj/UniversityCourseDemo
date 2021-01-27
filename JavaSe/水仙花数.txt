@@ -1,0 +1,20 @@
+package com.pxy;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);	//输入对象
+		for (int i = 100; i < 1000; i++) {
+			int g = i%10;
+			int s = i/10%10;
+			int b = i/100;
+			if(i==g*g*g+s*s*s+b*b*b){
+				System.out.println(i+"是水仙花数！");
+			}
+		}
+
+	}
+
+}

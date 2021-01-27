@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>彩票</title>
+	</head>
+	<body>
+		彩票36选7个随机号码 <br />
+		彩票号码在1-36间 <br />
+		数组从小到大排序 <br />
+		彩票中奖号码是：<input type="" name="" id="number" value="" />
+		<input type="button" name="" id="kaijiang" value="开奖" />
+	</body>
+	<script type="text/javascript">
+		//Math.random()*35+1
+		
+		
+		
+		function b(){
+			var haoma=new Array();
+			var i=0;
+			for(i=0;i<36;i++)
+			{
+				haoma[0]=i+1;
+			}
+			var zhongjianghaoma=new Array();
+			
+				var j=0;
+				i=0;
+				while(i<7)
+				{
+					var v=Math.floor(Math.random()*35+1);
+					var flag=0;
+					for(j=zhongjianghaoma.length;j>=0;j--)
+					{
+						if(v==zhongjianghaoma[j])
+						{
+							flag=1;
+							break;
+						}
+						
+					}
+					if(flag==0)
+					{
+						zhongjianghaoma[i]=v;
+						i++;
+					}
+					
+					//alert(v);
+				}
+				var num;
+				zhongjianghaoma.sort();
+				for(i=0;i<zhongjianghaoma.length;i++)
+				{
+					//alert("as");
+					//document.write(zhongjianghaoma[i]+"--");
+					
+					if(i==0)
+					num=zhongjianghaoma[i];
+					if(i>0)
+					num=num+","+zhongjianghaoma[i];
+				}
+				number=document.getElementById("number");
+				number.value=num;
+		}
+		var t1=setInterval(b,100);
+		
+		kaijiang=document.getElementById("kaijiang");
+		var fanfu=0;
+		kaijiang.onclick=function(){
+			if(fanfu==0)
+			{
+				clearInterval(t1);
+				fanfu=1;
+			}else{
+				t1=setInterval(b,100);
+				fanfu=0;
+			}
+			
+		}
+		
+		
+	</script>
+</html>

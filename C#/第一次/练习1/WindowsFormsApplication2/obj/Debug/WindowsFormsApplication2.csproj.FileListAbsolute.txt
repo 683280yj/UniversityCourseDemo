@@ -1,0 +1,4 @@
+d:\documents\visual studio 2012\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\Administrator\Desktop\201710253121黄昱桥\钢铁侠\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+E:\C#\201710253121黄昱桥\练习1\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+E:\C#\第一次\练习1\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config

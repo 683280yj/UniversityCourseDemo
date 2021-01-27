@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	
+</head>
+<body>
+	<font size="60" color="red">网易</font>
+	<font size="60">通行证</font>
+	<form>
+		<fieldset>
+		<legend>请填写注册信息</legend>
+		&emsp;用户名：<input type="text" name="yonghuming" id="yonghuming" value=""/><font color="red" id="a">由字母、数字、下划线、点、减号组成的4-18位字符，以数字、字母开头或结尾</font><br><br>
+		&emsp;&emsp;昵称：<input type="text" name="nicheng" id="nicheng" value=""/><font color="red" id="b">包含汉字、字母、数字、下划线的4-20位字符汉字占两个字符</font><br><br>
+		&emsp;&emsp;邮箱：<input type="text" name="youxiang" id="youxiang" value=""/><font color="red" id="c">邮箱账号·域名，如：good@tom.com、whj@sina.com.cn</font><br><br>
+		&emsp;&emsp;密码：<input type="password" name="mima" id="mima" value=""/><font color="red" id="d">由英文字母和数字组成的4-10位字符</font><br><br>
+		确认密码：<input type="password" /name="querenmima" id="querenmima" value=""/><font color="red" id="e"></font><br><br>
+		手机号码：<input type="text" name="phone" id="phone" value=""/><font color="red" id="f">手机号由11位数字组成，且以13、15、18开头</font><br><br>
+		&emsp;身份证：<input type="text" name="shengfenzheng" id="shengfenzheng" value=""/><font color="red" id="g">由15位或18位数字组成</font><br><br>
+		&emsp;&emsp;<input type="button" name="" id="" value="注册" onclick="zhuce()">
+		</fieldset>
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+        var yonghuming=document.getElementById("yonghuming");
+        var nicheng=document.getElementById("nicheng");
+        var youxiang=document.getElementById("youxiang");
+        var mima=document.getElementById("mima");
+        var querenmima=document.getElementById("querenmima");
+        var phone=document.getElementById("phone");
+        var shengfenzheng=document.getElementById("shengfenzheng");
+		var r1=/^(\w+\.*-*|\w+){4,18}$/;
+        var r2=/([\w\u4e00-\u9fa5]){4,20}/;
+        var r3=/^\w+@\w+\.[a-zA-Z]{2,3}(\.[a-zA-Z]{2,3})?$/; 
+        var r4=/[a-zA-Z0-9]{4,10}$/;
+        var r6=/^[13|15|180-9]{11}$/;
+        var r7=/[0-9]{15,18}/
+        yonghuming.onblur=function()
+		{
+			if(r1.test(yonghuming.value==false)
+			{    this.value="";
+				a.innerHTML"请输入：由字母、数字、下划线、点、减号组成的4-18位字符，以数字开头或结尾";
+			}
+			else
+			{
+				
+				a.innerHTML="格式正确"；
+			}
+		}
+		nicheng.onblur=function()
+      {
+	
+	   if(r2.test(nicheng.value)==false)
+	{
+		this.value="";
+		b.innerHTML="请输入：包含汉字、字母、数字、下划线的4-20位字符，汉字占两个字符";
+	}
+	else
+	b.innerHTML="格式正确";
+     }
+    youxiang.onblur=function()
+    { 
+	
+	if(r3.test(youxiang.value)==false)
+	{
+		this.value="";
+		c.innerHTML="请输入：邮箱账号@域名，如：good@tom.com、whj@sina.com.cn";
+	}
+	else
+	c.innerHTML="格式正确";
+}
+   mima.onblur=function()
+{
+	
+	if(r4.test(mima.value)==false)
+	{
+		this.value="";
+		d.innerHTML="请输入：由英文字母和数字组成的4-10位字符";
+	}
+	else
+	d.innerHTML="格式正确";
+}
+querenmima.onblur=function()
+{
+	if((mima.value)!=(querenmima.value))
+	{
+		this.value="";
+	    e.innerHTML="两次密码不一致";
+	}
+	else
+	e.innerHTML="格式正确";	
+}
+phone.onblur=function()
+{
+	
+	if(r6.test(phone.value)==false)
+	{
+		this.value="";
+		f.innerHTML="请输入：手机号由11位数字组成，且以13、15、18开头";
+	}
+	else
+	f.innerHTML="格式正确";
+}
+shengfenzheng.onblur=function()
+{
+	
+	if(r7.test(shengfenzheng.value)==false)
+	{
+		this.value="";
+		g.innerHTML="请输入：由15位或18位数字组成";
+	}
+	else
+	g.innerHTML="格式正确";
+}
+function zhuce()
+{
+	if((yonghuming.value)&&(nicheng.value)&&(youxiang.value)&&(mima.value)&&(querenmima.value)&&(phone.value)&&(shengfenzheng.value)!="")
+	alert("注册成功")
+	else
+	alert("注册失败")
+}
+
+
+
+		
+		
+		
+		
+		
+</script>

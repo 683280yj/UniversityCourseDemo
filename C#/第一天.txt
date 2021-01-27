@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace C语言介绍
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //string name = "嘉文";
+            //int age = 25;
+            //double win = 51.5;
+            //string str = "共同分担过分过分";
+            //Console.WriteLine("姓名：" + name);
+            //Console.WriteLine("年龄：" + age);
+            //Console.WriteLine("胜率：" + win + "%");
+
+
+            //Console.WriteLine("请输入园的半径：");
+            ////string str = Console.ReadLine();
+            ////int r = int.Parse(str);
+            //int r = int.Parse(Console.ReadLine());
+            //const double PI = 3.14;
+            //Console.WriteLine("园的面积："+2*r*PI);
+
+            //Console.WriteLine("请输入一个数字：");
+            //int num = int.Parse(Console.ReadLine());
+            //Console.WriteLine("{0}*{1}={2}\t{0}*{3}={4}",num,1,num*1,2,num*2);
+
+            Console.WriteLine("请输入两个数字：");
+            int num1 = int.Parse(Console.ReadLine());
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("交换之前");
+            Console.WriteLine("num1={0} num2={1}",num1,num2);
+            Console.WriteLine("交换之后");
+            int temp = num1;
+            num1 = num2;
+            num2 = temp;
+            Console.WriteLine("num1={0} num2={1}", num1, num2);
+        }
+    }
+}

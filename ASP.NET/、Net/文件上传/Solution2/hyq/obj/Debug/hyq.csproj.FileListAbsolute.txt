@@ -1,0 +1,13 @@
+D:\llyMVC\Solution1\hyq\bin\hyq.dll.config
+D:\llyMVC\Solution1\hyq\bin\hyq.dll
+D:\llyMVC\Solution1\hyq\bin\hyq.pdb
+D:\llyMVC\Solution1\hyq\obj\Debug\hyq.csprojResolveAssemblyReference.cache
+D:\llyMVC\Solution1\hyq\obj\Debug\hyq.dll
+D:\llyMVC\Solution1\hyq\obj\Debug\hyq.pdb
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\bin\hyq.dll.config
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\bin\hyq.dll
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\bin\hyq.pdb
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\obj\Debug\hyq.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\obj\Debug\hyq.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\obj\Debug\hyq.dll
+C:\Users\Administrator\Desktop\、Net\文件上传\Solution1\hyq\obj\Debug\hyq.pdb

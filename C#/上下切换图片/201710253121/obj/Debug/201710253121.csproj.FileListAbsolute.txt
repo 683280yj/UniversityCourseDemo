@@ -1,0 +1,18 @@
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\bin\Debug\201710253121.exe.config
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\bin\Debug\201710253121.exe
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\bin\Debug\201710253121.pdb
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\obj\Debug\201710253121.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\obj\Debug\_201710253121.Form1.resources
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\obj\Debug\_201710253121.Properties.Resources.resources
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\obj\Debug\201710253121.csproj.GenerateResource.Cache
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\obj\Debug\201710253121.exe
+d:\documents\visual studio 2012\Projects\201710253121\201710253121\obj\Debug\201710253121.pdb
+E:\C#\上下切换图片\201710253121\bin\Debug\201710253121.exe.config
+E:\C#\上下切换图片\201710253121\obj\Debug\201710253121.exe
+E:\C#\上下切换图片\201710253121\obj\Debug\201710253121.pdb
+E:\C#\上下切换图片\201710253121\bin\Debug\201710253121.exe
+E:\C#\上下切换图片\201710253121\bin\Debug\201710253121.pdb
+E:\C#\上下切换图片\201710253121\obj\Debug\201710253121.csprojResolveAssemblyReference.cache
+E:\C#\上下切换图片\201710253121\obj\Debug\_201710253121.Form1.resources
+E:\C#\上下切换图片\201710253121\obj\Debug\_201710253121.Properties.Resources.resources
+E:\C#\上下切换图片\201710253121\obj\Debug\201710253121.csproj.GenerateResource.Cache
