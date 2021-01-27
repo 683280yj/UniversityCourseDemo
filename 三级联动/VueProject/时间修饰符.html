@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        .inner{
+            height:150px;
+            background-color: aqua;
+        }
+        .outer{
+            padding: 40px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- .stop阻止冒泡-->
+<!--    <div id="app">-->
+<!--        <div class="inner" @click="divHandler">-->
+<!--            <input type="button" value="点击" @click.stop="btnHandler">-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <!--    阻止默认行为-->
+<!--    <a href="http://www.baidu.com" @click.prevent="linkClick">百度</a>-->
+
+<!--    .captu实现捕获触发事件的机制-->
+<!--    <div id="app">-->
+<!--    <div class="inner" @click.capture="divHandler">-->
+<!--        <input type="button" value="点击" @click="btnHandler">-->
+<!--    </div>-->
+<!--    </div>-->
+
+<!--    .self实现只有点击当前元素时，才触发事件处理函数-->
+<!--    <div id="app">-->
+<!--        <div class="inner" @click.self="divHandler">-->
+<!--            <input type="button" value="点击" @click="btnHandler">-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    .prvenet.once 只触发一次事件-->
+<!--    <a href="http://www.baidu.com" @click.prevent.once="linkClick">百度</a>-->
+
+<!--    .stop和.self的区别-->
+<!--    <div id="app">-->
+<!--        <div class="outer" @click="div1Handler">-->
+<!--            <div class="inner" @click="divHandler">-->
+<!--               <input type="button" value="点击" @click.stop="btnHandler">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+        .self只阻止自己,.stop阻止自己以外的
+<!--    <div id="app">-->
+<!--        <div class="outer" @click="div1Handler">-->
+<!--            <div class="inner" @click.self="divHandler">-->
+<!--                <input type="button" value="点击" @click="btnHandler">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {},
+            methods:{
+                divHandler(){
+                    console.log("触发div")
+                },
+                btnHandler(){
+                    console.log("触发btn")
+                },
+                linkClick(){
+                    console.log("触发链接")
+                },
+                div1Handler(){
+                    console.log("触发div1")
+                }
+            }
+        })
+    </script>
+</body>
+</html>

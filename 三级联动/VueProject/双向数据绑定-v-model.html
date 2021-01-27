@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div id="app">
+        <h4>{{ msg }}</h4>
+<!--        v-bind 只能实现数据的单项绑定-->
+<!--        <input type="text" v-bind:value="msg" style="width: 100%"/>-->
+
+<!--        v-model 可以实现表单元素和Model中数据的双向数据绑定 注意：只能用在表单元素中-->
+        <input type="text" v-model="msg" style="width: 100%"/>
+
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                msg: '前端开发学习路线（学+测）-阿里云大学'
+            },
+            methods:{
+            }
+        })
+    </script>
+</body>
+</html>

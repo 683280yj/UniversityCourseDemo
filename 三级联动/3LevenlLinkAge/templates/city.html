@@ -1,0 +1,6 @@
+<select name="tll-address-city" id="tll-address-city" onchange="getDistrictForTll();">
+    <option disabled selected value=""></option>
+    {{each districts value index}}
+    <option value="">{{value.name}}</option>
+    {{/each}}
+</select>

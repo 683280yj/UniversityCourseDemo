@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/template-web.js"></script>
+</head>
+<body>
+<!--<select id="abc">-->
+<!--    <option id="province"></option>-->
+<!--    <option id="city"></option>-->
+<!--    <option id="district"></option>-->
+<!--</select>-->
+<div id="content">
+    <p>
+        <span id="content-province"></span>
+        <span id="content-city"></span>
+        <span id="content-district"></span>
+    </p>
+</div>
+</body>
+<script>
+    // window.onload = function () {
+    //    province();
+    // }
+
+    function province() {
+        $.ajax({
+            url: "https://restapi.amap.com/v3/config/district",
+            type: "GET",
+            dataType: "json",
+            async: true,
+            data: {
+                key: "97215f3ee08e653118d0be8f430bd996",
+                subdistrict: 1
+            },
+            success: function (data) {
+                console.log(data);
+
+                let obj = data.districts[0];
+
+                let html = $.get('templates/province.html', function (data) {
+                    let render = template.compile(data);
+                    let str = render(obj);
+
+                    document.getElementById('content-province').innerHTML = str;
+                });
+            }, error: function (data) {
+                console.log(data);
+            }
+        });
+    }
+
+    province();
+
+    function city() {
+        var province =$("#content-province").val();
+        $.ajax({
+            url: "https://restapi.amap.com/v3/config/district",
+            type: "GET",
+            dataType: "json",
+            async: true,
+            data: {
+                key: "97215f3ee08e653118d0be8f430bd996",
+                keywords: province,
+                subdistrict: 2,
+            },
+            success: function (data) {
+                console.log(data);
+
+                let obj = data.districts[0];
+
+                let html = $.get('templates/province.html', function (data) {
+                    let render = template.compile(data);
+                    let str = render(obj);
+
+                    document.getElementById('content-city').innerHTML = str;
+                });
+            }, error: function (data) {
+                console.log(data)
+            }
+        });
+    }
+
+    city();
+
+    function district() {
+        var city =$("#content-city").val();
+        $.ajax({
+            url: "https://restapi.amap.com/v3/config/district",
+            type: "GET",
+            dataType: "json",
+            async: true,
+            data: {
+                key: "97215f3ee08e653118d0be8f430bd996",
+                keywords: city
+            },
+            success: function (data) {
+                console.log(data);
+
+                let obj = data.districts[0];
+
+                let html = $.get('templates/province.html', function (data) {
+                    let render = template.compile(data);
+                    let str = render(obj);
+
+                    document.getElementById('content-district').innerHTML = str;
+                });
+            }, error: function (data) {
+                console.log(data)
+            }
+        });
+    }
+
+    district();
+</script>
+</html>

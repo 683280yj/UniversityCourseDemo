@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			#app,#title{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app" @mouseover="lang" @mouseout="stop">
+			<div id="title">{{ msg }}</div>
+		</div>
+		<script>
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					msg: '刘轩,汪杰,陶安文,黄昱桥。',
+					intervalId: null
+				},
+				methods: {
+					lang(){
+						if(this.intervalId !=null) return;
+						this.intervalId = setInterval(() =>{
+							var start = this.msg.substring(0,1)
+							var end = this.msg.substring(1)
+							this.msg = end + start
+						},400)
+					},
+					stop(){
+						clearInterval(this.intervalId)
+						this.intervalId = null;
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

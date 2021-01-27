@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/template-web.js"></script>
+</head>
+<body>
+<div id="test-add"></div>
+</body>
+<script>
+    let obj = {};
+    let html = $.get('3LevenlLinkAge.html', function (data) {
+        let render = template.compile(data);
+        let str = render(obj);
+        console.log(str);
+        $("#test-add").html(str);
+        // document.getElementById('test-add').innerHTML = str;
+    });
+</script>
+</html>
