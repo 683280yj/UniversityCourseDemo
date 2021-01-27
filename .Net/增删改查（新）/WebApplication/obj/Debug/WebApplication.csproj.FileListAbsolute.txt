@@ -1,0 +1,26 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\WebApplication.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\WebApplication.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\WebApplication.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\Test.BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\test.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\Test.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\Test.BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\test.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\bin\Test.DAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\WebApplication.dll.config
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\WebApplication.dll
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\WebApplication.pdb
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\Test.BLL.dll
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\test.Model.dll
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\Test.DAL.dll
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\Test.BLL.pdb
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\test.Model.pdb
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\Test.DAL.pdb
+C:\Users\Administrator\Desktop\day1030\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\day1030\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\Administrator\Desktop\day1030\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\Common.dll
+C:\Users\Administrator\Desktop\day1030\WebApplication\bin\Common.pdb

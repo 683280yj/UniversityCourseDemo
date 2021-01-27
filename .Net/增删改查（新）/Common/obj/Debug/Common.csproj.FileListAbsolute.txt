@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\day1030\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\day1030\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Desktop\day1030\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\day1030\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Desktop\day1030\Common\obj\Debug\Common.pdb
+E:\课程\、Net\增删改查（新）\Common\bin\Debug\Common.dll
+E:\课程\、Net\增删改查（新）\Common\bin\Debug\Common.pdb
+E:\课程\、Net\增删改查（新）\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\课程\、Net\增删改查（新）\Common\obj\Debug\Common.dll
+E:\课程\、Net\增删改查（新）\Common\obj\Debug\Common.pdb

@@ -1,0 +1,25 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\bin\Debug\Test.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\bin\Debug\Test.DAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\bin\Debug\test.Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\bin\Debug\test.Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\obj\Debug\Test.DAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\day1030\Test.DAL\obj\Debug\Test.DAL.pdb
+C:\Users\Administrator\Desktop\day1030\Test.DAL\bin\Debug\Test.DAL.dll
+C:\Users\Administrator\Desktop\day1030\Test.DAL\bin\Debug\Test.DAL.pdb
+C:\Users\Administrator\Desktop\day1030\Test.DAL\bin\Debug\test.Model.dll
+C:\Users\Administrator\Desktop\day1030\Test.DAL\bin\Debug\test.Model.pdb
+C:\Users\Administrator\Desktop\day1030\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\day1030\Test.DAL\obj\Debug\Test.DAL.dll
+C:\Users\Administrator\Desktop\day1030\Test.DAL\obj\Debug\Test.DAL.pdb
+C:\Users\Administrator\Desktop\day1030\Test.DAL\bin\Debug\Common.dll
+C:\Users\Administrator\Desktop\day1030\Test.DAL\bin\Debug\Common.pdb
+E:\课程\、Net\增删改查（新）\Test.DAL\bin\Debug\Test.DAL.dll
+E:\课程\、Net\增删改查（新）\Test.DAL\bin\Debug\Test.DAL.pdb
+E:\课程\、Net\增删改查（新）\Test.DAL\bin\Debug\Common.dll
+E:\课程\、Net\增删改查（新）\Test.DAL\bin\Debug\test.Model.dll
+E:\课程\、Net\增删改查（新）\Test.DAL\bin\Debug\Common.pdb
+E:\课程\、Net\增删改查（新）\Test.DAL\bin\Debug\test.Model.pdb
+E:\课程\、Net\增删改查（新）\Test.DAL\obj\Debug\Test.DAL.csprojResolveAssemblyReference.cache
+E:\课程\、Net\增删改查（新）\Test.DAL\obj\Debug\Test.DAL.dll
+E:\课程\、Net\增删改查（新）\Test.DAL\obj\Debug\Test.DAL.pdb

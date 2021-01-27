@@ -1,0 +1,6 @@
+D:\llyMVC\Solution1\hyq\bin\hyq.dll.config
+D:\llyMVC\Solution1\hyq\bin\hyq.dll
+D:\llyMVC\Solution1\hyq\bin\hyq.pdb
+D:\llyMVC\Solution1\hyq\obj\Debug\hyq.csprojResolveAssemblyReference.cache
+D:\llyMVC\Solution1\hyq\obj\Debug\hyq.dll
+D:\llyMVC\Solution1\hyq\obj\Debug\hyq.pdb
