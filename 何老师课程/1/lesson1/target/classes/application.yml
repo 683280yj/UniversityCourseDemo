@@ -1,0 +1,24 @@
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /spb
+
+person:
+  username: admin
+  age: 21
+
+city:
+  - wuhan
+  - zhejiang
+  - enshi
+  - chongqing
+
+food: kfc
+
+student:
+  - name: kevin
+    age: 22
+    addr: wuhan
+  - name: cmr
+    age: 21
+    addr: enshi
