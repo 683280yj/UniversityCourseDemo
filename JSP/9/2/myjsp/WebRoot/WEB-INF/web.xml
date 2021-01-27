@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>myjsp</display-name>
+  <servlet>
+    <servlet-name>DriversListServlet</servlet-name>
+    <servlet-class>com.pxy.servlet.DriversListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CarServlet</servlet-name>
+    <servlet-class>com.pxy.servlet.CarServlet</servlet-class>
+  </servlet>
+  
+
+
+  <servlet-mapping>
+    <servlet-name>DriversListServlet</servlet-name>
+    <url-pattern>/drivers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CarServlet</servlet-name>
+    <url-pattern>/car</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>RegServlet</servlet-name>
+        <servlet-class>com.pxy.servlet.RegServlet</servlet-class>
+    </servlet>
+  <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.pxy.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminExitServlet</servlet-name>
+    <servlet-class>com.pxy.servlet.AdminExitServlet</servlet-class>
+  </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>RegServlet</servlet-name>
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminlogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminExitServlet</servlet-name>
+    <url-pattern>/adminexit</url-pattern>
+  </servlet-mapping>
+    <filter>
+        <filter-name>MyEncoding</filter-name>
+        <filter-class>com.pxy.filter.MyEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>AdminFilter</filter-name>
+        <filter-class>com.pxy.filter.AdminFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+</web-app>

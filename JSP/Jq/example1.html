@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+			}
+			#book{
+				width: 360px;
+				border: 1px solid #999999;
+				margin: 20px;
+			}
+			#head{
+				background-color: #dddddd;
+				height: 30px;
+			}
+			#head div{
+				float: left;
+				width: 315px;
+				font-size: 18px;
+				font-weight: bold;
+				margin: 2px 5px;
+			}
+			#head img{
+				margin-top: 4px;
+				cursor: pointer;
+			}
+			#content ul{
+				width: 360px;
+				overflow: hidden;
+			}
+			#content ul li{
+				float: left;
+				width: 110px;
+				margin-left: 5px;
+			}
+			#foot{
+				text-align: right;
+				margin: 2px 3px;
+			}
+		</style>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#head img").click(function(){
+					var $state = $("#content").css("display");
+					if($state=="none"){
+						$("#content").css("display", "block");
+					}
+					else{
+						$("#content").css("display", "none");
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="book">
+			<div id="head">
+				<div>图书分类</div>
+				<img src="img/Female.gif" />
+			</div>
+			<div id="content">
+				<ul>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+					<li><a href="#">aaaa</a></li>
+				</ul>
+				<div id="foot"><a href="#">更多</a></div>
+			</div>
+		</div>
+	</body>
+
+</html>

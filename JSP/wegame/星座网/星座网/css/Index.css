@@ -1,0 +1,131 @@
+﻿div#content {
+    width:969px;
+    margin:15px auto;
+
+}
+    div#content div#top {
+        overflow:hidden;/*解决浮动塌陷*/
+        margin-bottom:15px;
+    }
+       div#content div#top div#left {
+       float:left;
+       width:285px;
+       height:396px;
+       border:1px solid #dfdfdf;
+       padding:2px;
+    }
+              div#content div#top div#left img.small {
+      
+       width:48px;
+       height:48px;
+      border:1px solid #dfdfdf;
+       padding:2px;
+    }
+                div#content div#top div#middle {
+       float:left;
+       width:415px;
+       height:398px;
+       border:1px solid #dfdfdf;
+       padding:2px;
+       margin:0px 7px;
+    }
+div#top div#middle dl {
+    height:72px;
+    border-bottom:1px dashed #dfdfdf;
+   padding-left:33px;
+   padding-top:10px;
+} 
+div#top div#middle dl.last {
+    
+    border-bottom:none;
+
+} 
+div#top div#middle  dt {
+  width:40px;
+  height:36px;
+  font-weight:bold;
+  font-size:18px;
+  color:#a14db4;
+  float:left;
+  margin-right:15px;
+    line-height:30px;
+}
+div#top div#middle  dd {
+  line-height:30px;
+}
+div#top div#right {
+    float:left;
+    width:237px;
+       height:396px;
+       border:1px solid #dfdfdf;
+      padding:2px;
+}
+div#top div#right dl {
+    float:left;
+    width:110px;
+      
+      
+}
+div#top div#right dl.odd {
+   margin-right:12px;
+      
+}
+div#top div#right dt img {
+    
+    width:110px;
+       height:64px;
+      
+}
+div#top div#right dd {
+   text-align:center;
+   height:25px;
+   line-height:25px;
+      
+}
+div#content div.info {
+    float:left;
+    width:316px;
+    height:286px;
+    border:1px solid #c7c7c7;
+}
+div#xzmr, div#xzyl, div#sesx {
+    margin:0px 7px;
+}
+div#xzph, div#xzyl, div#xxxg {
+    margin-top:7px;
+    margin-bottom:7px;
+}
+div.info h2{
+    height:36px;
+   background-color:#f7f7f7;
+   padding-left:15px;
+   color:#333333;
+   line-height:36px;
+   font-size:15px;
+}
+div.info a {
+    color:#333333;
+}
+div.info div.des{
+    padding-left:10px;
+    padding-top:10px;
+}
+div.info div.des img{
+   border:1px solid #c7c7c7;
+}
+div.info div.des dt{
+float:left;
+margin-right:10px;
+}
+div.info div.des dd{
+line-height:26px;
+}
+div.info div.des ul{
+clear:both;
+margin-top:12px;
+
+}
+div.info div.des ul li{
+line-height:26px;
+height:26px;
+}

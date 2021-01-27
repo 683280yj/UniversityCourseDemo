@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CourseWork/CourseWork.iml" filepath="$PROJECT_DIR$/CourseWork/CourseWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Project/JSP_Course_Assignments/Weibo/myjsp.iml" filepath="$PROJECT_DIR$/../Project/JSP_Course_Assignments/Weibo/myjsp.iml" />
+    </modules>
+  </component>
+</project>

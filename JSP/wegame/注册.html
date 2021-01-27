@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin: 0px;
+			}
+			div{
+				width: 500px;
+				height: 300px;
+				border:1px solid black;
+				margin: auto;
+				margin-top:100px ;
+			}
+			div.id1{
+				width: 500px;
+				height: 20px;
+				margin: 0;
+				border: 1px solid black;
+				background-color:darkgray ;
+			}
+			div.id2{
+				margin-top:20px ;
+				margin-left:50px ;
+				border: 0px ;
+			}
+			div.id3{
+				margin-left:40px ;
+				margin-top:15px ;
+				border: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<div class="id1">
+			<p >
+				<strong>登陆</strong>
+			</p>
+		</div>
+		<div class="id2">
+			<form name="form1" method="get" action="">
+			<p>账号:
+				<input name="fname" type="text"  class="textBorder"/>
+			</p>
+			<p>密码:
+				<input name="pass" type="password" class="textBorder" size="20"/>
+			</p>
+			<div class="id3">
+			<input type="checkbox" name="baocun" value="gou" />记住我的登录状态<br /><br />
+			<input type="button" value="登录" style="width:80px;height: 30px ;background-color:  #289cef"; /> <a href="www.baidu.com">忘记密码？</a><br />
+			<br />
+			<hr / width="350px"><br />
+			<p>还没有百度账号？<a href="www.baidu.com">立即注册</a></p>
+			</div>
+		</form></div>
+		</div>
+	</body>
+</html>

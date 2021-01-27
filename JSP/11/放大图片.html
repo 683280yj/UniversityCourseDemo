@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+				font-size: 12px;
+			}
+			li{
+				margin: 20px 100px;
+			}
+			li img{
+				width: 80px;
+				height: 80px;
+			}
+		</style>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("li>img").hover(function(e){
+					//1.显示divShow
+					$("#divShow").css("display", "block");
+					//2.定位
+					//2.1 设置定位为绝对定位
+					$("#divShow").css("position", "absolute");
+					$("#divShow").css("z-index","10");
+					//2.2 设置坐标为当前鼠标坐标
+					$("#divShow").css("left",e.pageX);
+					$("#divShow").css("top",e.pageY);
+					//2.3 图片必须是当前图片
+					$("#divShow>img").attr("src",$(this).attr("src"));
+				},function(){
+					$("#divShow").css("display", "none");
+				});
+				$("li>img").mousemove(function(e){
+					$("#divShow").css("left",e.pageX);
+					$("#divShow").css("top",e.pageY);
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<ul>
+			<li><img src="img/s1.jpg" /></li>
+			<li><img src="img/s2.jpg" /></li>
+			<li><img src="img/s3.jpg" /></li>
+		</ul>
+		<div id="divShow" style="display: none;">
+			<img src="img/s1.jpg" />
+		</div>
+	</body>
+
+</html>

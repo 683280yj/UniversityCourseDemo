@@ -1,0 +1,103 @@
+﻿body {
+    text-align:center;
+}
+div#header {
+    width:992px;
+    margin:0px auto;/*水平居中*/
+    overflow:hidden;/*解决浮动塌陷*/
+    padding:15px 0px; 
+  
+}
+div#header ul {
+   overflow:hidden;
+   
+
+}
+
+div#header ul li{
+    float:left;
+   
+
+}
+    div#header ul li.logo {
+        margin-right:350px;
+    }
+    div#header ul li.user {
+        border:1px solid #eadbee;
+        width:60px;
+        text-align:center;
+        line-height:31px;
+        height:31px;
+    }
+        div#header ul li.user a {
+            color: orange;
+        }
+         div#header ul li.search {
+        margin-left:20px;
+        background-image:url(../images/txtbtn.png);
+        height:32px;
+        width:204px;
+       padding-top:3px;
+       padding-left:4px;
+       background-repeat:no-repeat;
+       
+    }
+  div#header ul li.search  .txt{
+       border:none;
+       height:28px;
+       line-height:28px;
+       width:170px;
+       
+    }
+    div#header ul li.search  .btn{
+       border:none;
+       height:28px;
+       cursor:pointer; /*光标样式*/
+       width:28px;
+       background-color:transparent;
+       
+    }
+   div#header ul li.dq{
+            margin-top:10px;
+        }
+ #bgnav {
+        background-color:#a14db4;
+        width:100%;
+        height:40px;
+text-align:center;
+    }
+    #bgnav ul {
+            width:1040px;
+    margin:0px auto;/*水平居中*/
+    overflow:hidden;/*解决浮动塌陷*/
+
+        }
+    #bgnav ul li {
+         float:left;
+         line-height:40px;
+         height:40px;
+         font-size:15px;
+         padding:0px 15px;
+        }
+      #bgnav ul li a {
+        color:white;
+
+        }
+div.xzpic {
+    overflow:hidden;/*解决浮动塌陷*/
+      width:972px;
+    margin:0px auto;/*水平居中*/
+ 
+
+
+}
+div.xzpic ul li {
+  float:left;
+  padding:0px 2px;
+}
+    div.xzpic ul li.left {
+        padding-left:0px;
+    }
+      div.xzpic li.right {
+        padding-right:0px;
+    }

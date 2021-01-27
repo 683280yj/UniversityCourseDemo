@@ -1,0 +1,15 @@
+.Top {
+    height: 250px;
+    background-color: aqua;
+}
+
+.TopBar {
+    height: 50px;
+    background-color: blue;
+}
+
+.TopBack{
+    height: 200px;
+    background-color: red;
+    /*width: 20px;*/
+}

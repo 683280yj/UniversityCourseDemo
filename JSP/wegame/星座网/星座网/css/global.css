@@ -1,0 +1,21 @@
+﻿body {
+    font-size:12px;
+    font-family:Arial;
+    text-align:center;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+a {
+    text-decoration:none
+}
+ul {
+    list-style:none;
+}
+a img {
+    border:none;
+}
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, li ,div{
+    text-align:left;
+}
