@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-box{
+    max-width: 1000px;
+    margin: 0px auto;
+    height: 60px;
+}
+.login-box img{
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.big{
+    position: absolute;
+    left: 15%;
+}
+.search{
+    width: 100%;
+    height: 471px;
+    background-color: #FD7A72;
+}
+.search-box{
+    position: absolute;
+    left: 59%;
+    top: 12%;
+    width: 362px;
+    height: 432px;
+    background-color: #F8F8F8;
+}
+.search-btn{
+    border: 1px solid #F8F8F8;
+    padding: 5px;
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.title{
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+}
+form p input{
+    width: 322px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    margin: 10px 0 0 0;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+}
+.login{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+.reg{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+.btn-login{
+    margin: 20px 0 0 0;
+    width: 322px;
+    height: 34px;
+    background-color: cornflowerblue;
+    border: #FFFFFF;
+}
+.error{
+    position: absolute;
+    left: 68%;
+    top: 65%;
+    color: dodgerblue;
+}

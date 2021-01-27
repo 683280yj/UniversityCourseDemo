@@ -1,0 +1,8 @@
+com\chinasoft\web\controller\BaseController.class
+com\chinasoft\web\daomain\address.class
+com\chinasoft\web\service\impl\UserServiceImpl.class
+com\chinasoft\web\service\IUserService.class
+com\chinasoft\web\SsmTestApplication.class
+com\chinasoft\web\daomain\login.class
+com\chinasoft\web\controller\UserController.class
+com\chinasoft\web\dao\IUserDao.class

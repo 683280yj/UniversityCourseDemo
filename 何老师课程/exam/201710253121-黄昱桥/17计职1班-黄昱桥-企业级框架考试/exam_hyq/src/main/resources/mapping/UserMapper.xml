@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoft.exam.dao.IUserDao" >
+
+    <select id="selectUserById" parameterType="int" resultType="hashmap">
+        Profile_Id as profileId,Profile_Name as profileName,Profile_Birthday as profileBirthday,Profile_Gender as profileGender,Profile_Career as profileCareer,Profile_Address as profileAddress,Profile_Mobile as profileMobile
+        from tb_Profile
+        where Profile_Id = #{profileId}
+    </select>
+
+    <select id="getAll" resultType="com.chinasoft.exam.domain.Profile">
+       select Profile_Id as profileId,Profile_Name as profileName,Profile_Birthday as profileBirthday,Profile_Gender as profileGender,Profile_Career as profileCareer,Profile_Address as profileAddress,Profile_Mobile as profileMobile
+       from tb_Profile
+    </select>
+
+    <select id="get" parameterType="int" resultType="com.chinasoft.exam.domain.Profile">
+        select Profile_Id as profileId,Profile_Name as profileName,Profile_Birthday as profileBirthday,Profile_Gender as profileGender,Profile_Career as profileCareer,Profile_Address as profileAddress,Profile_Mobile as profileMobile from
+        from tb_Profile
+        where Profile_Id = #{profileID}
+    </select>
+
+    <update id="update" parameterType="hashmap">
+        update tb_Profile
+        <trim prefix="set" suffixOverrides=",">
+            <if test="profileName       != null">Profile_Name      = #{profileName},</if>
+            <if test="profileBirthday      != null">Profile_Birthday     = #{profileBirthday},</if>
+            <if test="profileGender        != null">Profile_Gender     = #{profileGender},</if>
+            <if test="profileCareer       != null">Profile_Career      = #{profileCareer},</if>
+            <if test="profileAddress      != null">Profile_Address     = #{profileAddress},</if>
+            <if test="profileMobile        != null">Profile_Mobile     = #{profileMobile},</if>
+        </trim>
+        where Profile_Id = #{profileId}
+    </update>
+</mapper>

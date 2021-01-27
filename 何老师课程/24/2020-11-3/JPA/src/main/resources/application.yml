@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: cmrhyq
+    password: Hyq0901.
+    Url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?characterEncoding=utf-8&useSSl=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+
+

@@ -1,0 +1,50 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.chinasoft.lesson1.config.JdbcConfig",
+      "name": "person",
+      "sourceMethod": "getData()",
+      "type": "com.chinasoft.lesson1.demain.User"
+    },
+    {
+      "sourceType": "com.chinasoft.lesson1.controller.Test1Controller",
+      "name": "person",
+      "type": "com.chinasoft.lesson1.controller.Test1Controller"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.chinasoft.lesson1.demain.User",
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.chinasoft.lesson1.demain.User",
+      "defaultValue": 0,
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.chinasoft.lesson1.controller.Test1Controller",
+      "defaultValue": 0,
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.chinasoft.lesson1.demain.User",
+      "name": "person.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.chinasoft.lesson1.demain.User",
+      "name": "person.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.chinasoft.lesson1.controller.Test1Controller",
+      "name": "person.username",
+      "type": "java.lang.String"
+    }
+  ]
+}

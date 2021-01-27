@@ -1,0 +1,21 @@
+jdbc:
+  username: cmrhyq
+  password: Hyq0901.
+  jdbcUrl: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir
+  driverClassName: com.mysql.cj.jdbc.Driver
+
+#Server:
+#  port: 6666
+#  servlet:
+#    context-path:  /ssm
+spring:
+  datasource:
+    username: cmrhyq
+    password: Hyq0901.
+    url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?characterEncoding=utf-8&useSSl=false
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.chinasoft.ssm.domain

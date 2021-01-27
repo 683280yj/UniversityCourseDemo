@@ -1,0 +1,24 @@
+#server:
+#  port: 7777
+#  servlet:
+#    context-path: /boot
+
+person:
+  username: admin
+  age: 12
+
+city:
+  - beijing
+  - tianjing
+  - nanjing
+
+food: kfc
+
+#配置数组集合(对象)
+student:
+  - name: tom
+    age: 12
+    addr: beijing
+  - name: jim
+    age: 23
+    addr: tianjing

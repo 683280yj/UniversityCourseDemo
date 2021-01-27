@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoft.web.dao.IUserDao" >
+    <!--登录模块-->
+    <select id="selectUserLogin" parameterType="hashmap" resultType="java.util.HashMap">
+        select user_id as userId,user_name as userName,user_pwd as userPwd
+        from User
+        where user_name = #{userName} and user_pwd = #{userPwd}
+    </select>
+    <!--用户登录-->
+    <select id="selectLogin" parameterType="com.chinasoft.web.daomain.login" resultType="com.chinasoft.web.daomain.login">
+        select user_id as userId,user_name as userName,user_pwd as userPwd,user_nick as userNick
+        from User
+        where user_name = #{userName} and user_pwd = #{userPwd}
+    </select>
+    <!--增加用户-->
+    <insert id="insertReg" parameterType="hashmap" keyProperty="user_id" useGeneratedKeys="true">
+        insert into User (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userName != null">user_name,</if>
+            <if test="userPwd != null">user_pwd,</if>
+            <if test="userNick != null">user_nick,</if>
+        </trim>
+        ) values (
+        <trim suffix="" suffixOverrides=",">
+            <if test="userName     != null">#{userName},</if>
+            <if test="userPwd    != null">#{userPwd},</if>
+            <if test="userNick    != null">#{userNick},</if>
+        </trim>
+        )
+    </insert>
+
+    <!--地址模块-->
+    <!--根据账号查询地址-->
+    <select id="selectUserById" resultType="com.chinasoft.web.daomain.address">
+        select add_id as addId,add_receiver as addReceiver,
+        add_phone as addPhone,add_province as addProvince,
+        add_city as addCity,add_county as addCounty,
+        add_address as addAddress
+        from Address
+        where user_id=(select user_id
+        from User
+        where user_name = #{userName} and user_pwd = #{userPwd})
+    </select>
+
+    <!--根据id删除地址信息-->
+    <delete id="deleteUserByIds" parameterType="int">
+        delete from Address
+        where add_id = #{addId}
+    </delete>
+
+<!--    <select id="selectDelUser" resultType="com.chinasoft.web.daomain.address">-->
+<!--        select user_nick as userNick,user_name as userName,-->
+<!--        user_pwd as userPwd-->
+<!--        from User-->
+<!--        where user_id=(select user_id as userId-->
+<!--        from Address-->
+<!--        where add_id = #{addId})-->
+<!--    </select>-->
+</mapper>

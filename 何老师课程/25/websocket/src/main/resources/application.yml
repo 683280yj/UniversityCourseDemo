@@ -1,0 +1,40 @@
+#jdbc:
+# username: liuxuan
+#  password: lx991117
+# jdbcUrl: jdbc:mysql://bj.kevinkda.cn:3306/xxyo
+# driverClassName: com.mysql.cj.jdbc.Driver
+
+server:
+ port: 9999
+ servlet:
+  context-path: /demo
+
+spring:
+  datasource:
+    username: cmrhyq
+    password: Hyq0901.
+    Url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?characterEncoding=utf-8&useSSl=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  freemarker:
+    charset: utf-8
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    prefer-file-system-access: true
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    settings:
+      classic_compatible: true
+#  mvc:
+#    static-path-pattern: /static/** #静态资源前缀名
+#  resources:
+#    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/upload/
+#    static-locations: classpath:D:\img
+#配置mybatis
+#mybatis:
+#  mapper-locations: classpath:mapping/*Mapper.xml
+#  type-aliases-package: com.chinasoft.ssm.domain

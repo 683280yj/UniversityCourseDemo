@@ -1,0 +1,35 @@
+jdbc:
+  username: cmrhyq
+  password: Hyq0901.
+  jdbcUrl: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir
+  driverClassName: com.mysql.cj.jdbc.Driver
+
+Server:
+  port: 7777
+  servlet:
+    context-path:  /ssm
+spring:
+  datasource:
+    username: cmrhyq
+    password: Hyq0901.
+    url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?characterEncoding=utf-8&useSSl=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  freemarker:
+    charset: utf-8 #编码方式
+    check-template-location: true #检查模板位置是否存在
+    content-type: text/html
+    enabled: true #检查是否启用fteemarker
+    expose-request-attributes: false #设定所有request的属性在merge到模板的时候，是否要都添加到model中.
+    expose-session-attributes: false #是否在merge模板的时候，将HttpSession属性都添加到model中
+    expose-spring-macro-helpers: true #设定是否以springMacroRequestContext的形式暴露RequestContext给Spring’s macro library使用
+    prefer-file-system-access: true #是否优先从文件系统加载template，以支持热加载，默认为true
+    suffix: .ftl #设定模板的后缀.
+    template-loader-path: classpath:/templates #设定模板的加载路径，多个以逗号分隔
+    settings: #设定FreeMarker keys.
+      classic_compatible: true
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.chinasoft.ssm.domain
+
+#配置模板引擎

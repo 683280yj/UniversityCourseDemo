@@ -1,0 +1,12 @@
+server:
+  port: 7777
+  servlet:
+    context-path: /cloud
+spring:
+  datasource:
+    username: cmrhyq
+    password: Hyq0901.
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?characterEncoding=utf-8&useSSl=false&allowPublicKeyRetrieval=true
+mybatis:
+  type-aliases-package: com.chinasoft.service.domain

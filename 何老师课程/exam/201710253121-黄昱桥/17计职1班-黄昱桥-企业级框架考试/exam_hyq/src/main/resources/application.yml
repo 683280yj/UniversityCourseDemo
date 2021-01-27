@@ -1,0 +1,27 @@
+Server:
+  port: 7777
+  servlet:
+    context-path:  /exam
+spring:
+  datasource:
+    username: cmrhyq
+    password: Hyq0901.
+    url: jdbc:mysql://bj.kevinkda.cn:3306/HuangSir?characterEncoding=utf-8&useSSl=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  freemarker:
+    charset: utf-8 #编码方式
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    prefer-file-system-access: true
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    settings:
+      classic_compatible: true
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.chinasoft.exam.domain

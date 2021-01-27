@@ -1,0 +1,28 @@
+body{
+    background-color: #CCFFCC;
+}
+a{
+    text-decoration:none;
+}
+.search{
+    position: absolute;
+    left: 18%;
+    top: 20%;
+    width: 70%;
+    height: 100px;
+    background-color: #E8D098;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+.box{
+    color: #00B271;
+    position: absolute;
+    left: 28%;
+    top: 40%;
+}
+.num,.a{
+    color: #479AC7;
+    font-size: 20px;
+}
+.a:hover{
+    color: crimson;
+}

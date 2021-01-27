@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hj.online.basemanage.dao.EmployeeManageDao">
+    <!-- 查询全部记录 这个配的为实体类，下面配置的是map形式-->
+    <!--  
+	<select id="selectEmployeeList" resultType="map" parameterType="map">
+   select EMPLOYEE_ID as employeeId,EMPLOYEE_NAME as employeeName,PASSWORD as password,EMPLOYEE_TIME as employeeTime from employee limit #{startRow},#{pageSize}
+	</select>
+	-->
+	
+	   <sql id="queryFields">
+select e.CRM_EMPLOYEE_ID          as crmEmployeeId,
+       e.CRM_EMPLOYEE_NAME        as crmEmployeeName,
+       e.CRM_EMPLOYEE_EMAIL       as crmEmployeeEmail,
+       e.CRM_EMPLOYEE_PASSWORD    as crmEmployeePassword,
+       e.CRM_EMPLOYEE_TIME        as crmEmployeeTime,
+       e.CRM_EMPLOYEE_STATUS      as crmEmployeeStatus,
+       e.CRM_EMPLOYEE_SEX         as crmEmployeeSex,
+       e.CRM_EMPLOYEE_TEL         as crmEmployeeTel,
+       e.CRM_EMPLOYEE_IP          as crmEmployeeIp,
+       e.CRM_EMPLOYEE_COUNT       as crmEmployeeCount,
+       e.CRM_SHOP_ID              as crmShopId,
+       e.CRM_ROLE_ID              as crmRoleId,
+       s.CRM_SHOP_NAME            as crmShopName,
+       r.CRM_ROLE_NAME            as crmRoleName
+       from crm_employee as e left join crm_shop as s  on e.CRM_SHOP_ID=s.CRM_SHOP_ID
+      left join crm_role as r on e.CRM_ROLE_ID=r.CRM_ROLE_ID
+  </sql>
+  
+  <sql id="queryCondition">
+  	<trim prefix="where" prefixOverrides="and|or">
+  	  <if test="crmEmployeeId            != null and crmEmployeeId              !=''">and e.CRM_EMPLOYEE_ID     		                 =#{crmEmployeeId}</if>
+      <if test="crmEmployeeName          != null and crmEmployeeName            !=''">and e.CRM_EMPLOYEE_NAME     		                 like '%${crmEmployeeName}%'</if>
+      <if test="crmEmployeeEmail         != null and crmEmployeeEmail           !=''">and e.CRM_EMPLOYEE_EMAIL     		                 like '%${crmEmployeeEmail}%'</if>
+      <if test="crmEmployeePassword      != null and crmEmployeePassword     	!=''">and e.CRM_EMPLOYEE_PASSWORD       		         = #{crmEmployeePassword}</if>
+      <if test="crmEmployeeTime          != null and crmEmployeeTime  		    !=''">and DATE_FORMAT(e.CRM_EMPLOYEE_TIME, '%Y-%m-%d') = #{crmEmployeeTime}</if>
+      <if test="crmEmployeeStatus        != null and crmEmployeeStatus     	    !=''">and e.CRM_EMPLOYEE_STATUS       		         = #{crmEmployeeStatus}</if>
+      <if test="crmEmployeeTel           != null and crmEmployeeTel     	    !=''">and e.CRM_EMPLOYEE_TEL       		             = #{crmEmployeeTel}</if>
+      <if test="crmEmployeeIp            != null and crmEmployeeIp    	        !=''">and e.CRM_EMPLOYEE_IP       		             = #{crmEmployeeIp}</if>
+      <if test="crmEmployeeCount         != null and crmEmployeeCount    	    !=''">and e.CRM_EMPLOYEE_COUNT       		         = #{crmEmployeeCount}</if>
+      <if test="crmShopId                != null and crmShopId                  !=''">and e.CRM_SHOP_ID     		                 =#{crmShopId}</if>
+      <if test="crmRoleId                != null and crmRoleId                  !=''">and e.CRM_ROLE_ID     		                 =#{crmRoleId}</if>
+		</trim>
+  </sql>
+  
+  <select id="selectEmployeeManageCount" parameterType="hashmap" resultType="int">
+   select count(*)
+       from crm_employee as e left join crm_shop as s  on e.CRM_SHOP_ID=s.CRM_SHOP_ID
+      left join crm_role as r on e.CRM_ROLE_ID=r.CRM_ROLE_ID
+    <include refid="queryCondition" />
+  </select>
+  
+  <select id="selectEmployeeManage" parameterType="hashmap" resultType="hashmap">
+    <include refid="queryFields" />
+    <include refid="queryCondition" />
+    order by CRM_EMPLOYEE_ID DESC
+    <if test="start != null and pageSize != null ">
+			limit #{start}, #{pageSize} 
+		</if> 
+  </select>
+  
+
+  
+  	<insert id="insertEmployeeManage" parameterType="hashmap" keyProperty="CRM_EMPLOYEE_ID" useGeneratedKeys="true">
+		insert into crm_employee (
+		<trim suffix="" suffixOverrides=",">
+			<if test="crmEmployeeName != null">CRM_EMPLOYEE_NAME,</if>
+			<if test="crmEmployeeEmail != null">CRM_EMPLOYEE_EMAIL,</if>
+			<if test="crmEmployeePassword != null">CRM_EMPLOYEE_PASSWORD,</if>
+			<if test="crmEmployeeTime != null">CRM_EMPLOYEE_TIME,</if>
+			<if test="crmEmployeeStatus != null">CRM_EMPLOYEE_STATUS,</if>
+			<if test="crmEmployeeSex != null">CRM_EMPLOYEE_SEX,</if>
+			<if test="crmEmployeeTel != null">CRM_EMPLOYEE_TEL,</if>
+			<if test="crmEmployeeIp != null">CRM_EMPLOYEE_IP,</if>
+			<if test="crmEmployeeCount != null">CRM_EMPLOYEE_COUNT,</if>
+			<if test="crmShopId != null">CRM_SHOP_ID,</if>
+			<if test="crmRoleId != null">CRM_ROLE_ID,</if>
+		</trim>
+		) values (
+		<trim suffix="" suffixOverrides=",">
+			<if test="crmEmployeeName     != null">#{crmEmployeeName},</if>
+			<if test="crmEmployeeEmail    != null">#{crmEmployeeEmail},</if>
+			<if test="crmEmployeePassword != null">#{crmEmployeePassword},</if>
+			<if test="crmEmployeeTime     != null">#{crmEmployeeTime},</if>
+		    <if test="crmEmployeeStatus   != null">#{crmEmployeeStatus},</if>
+			<if test="crmEmployeeSex      != null">#{crmEmployeeSex},</if>
+			<if test="crmEmployeeTel      != null">#{crmEmployeeTel},</if>
+			<if test="crmEmployeeIp       != null">#{crmEmployeeIp},</if>
+			<if test="crmEmployeeCount    != null">#{crmEmployeeCount},</if>
+			<if test="crmShopId           != null">#{crmShopId},</if>
+			<if test="crmRoleId           != null">#{crmRoleId},</if>
+		</trim>
+		)
+	</insert>
+	
+
+	
+	<update id="updateEmployeeManage" parameterType="hashmap">
+		update crm_employee
+		<trim prefix="set" suffixOverrides=",">
+			<if test="crmEmployeeName       != null">CRM_EMPLOYEE_NAME      = #{crmEmployeeName},</if>
+			<if test="crmEmployeeEmail      != null">CRM_EMPLOYEE_EMAIL     = #{crmEmployeeEmail},</if>
+			<if test="crmEmployeePassword   != null">CRM_EMPLOYEE_PASSWORD  = #{crmEmployeePassword},</if>
+			<if test="crmEmployeeTime       != null">CRM_EMPLOYEE_TIME      = #{crmEmployeeTime},</if>
+			<if test="crmEmployeeStatus     != null">CRM_EMPLOYEE_STATUS    = #{crmEmployeeStatus},</if>
+			<if test="crmEmployeeSex        != null">CRM_EMPLOYEE_SEX       = #{crmEmployeeSex},</if>
+			<if test="crmEmployeeTel        != null">CRM_EMPLOYEE_TEL       = #{crmEmployeeTel},</if>
+			<if test="crmEmployeeIp         != null">CRM_EMPLOYEE_IP        = #{crmEmployeeIp},</if>
+		    <if test="crmEmployeeCount      != null">CRM_EMPLOYEE_COUNT     = #{crmEmployeeCount},</if>
+		    <if test="crmShopId             != null">CRM_SHOP_ID            = #{crmShopId},</if>
+		    <if test="crmRoleId             != null">CRM_ROLE_ID            = #{crmRoleId},</if>
+		</trim>
+		where CRM_EMPLOYEE_ID = #{crmEmployeeId}
+	</update>
+	
+<delete id="deleteEmployeeManage" parameterType="java.util.List">
+		delete from crm_employee
+		where CRM_EMPLOYEE_ID in
+	<foreach collection="list" item="item" open="(" separator=","
+			close=")">
+			#{item}
+    </foreach>
+	</delete>
+	
+		   <sql id="queryFields1">
+		select CRM_RESOURCE_NAME as crmResourceName,
+	       CRM_RESOURCE_ICONCLS as crmResourceIconcls, 
+		   CRM_RESOURCE_MODULE as crmResourceModule from (
+		select CRM_AUTHORITY_PUBLIC_ID as crmAuthorityPublicId 
+			from crm_authority as a where a.CRM_AUTHORITY_PARENT_ID=
+			(select CRM_AUTHORITY_ID as crmAuthorityId
+         from crm_authority as a where a.CRM_AUTHORITY_PUBLIC_ID=#{crmAuthorityPublicId} and 
+         a.CRM_AUTHORITY_REMARK_ID=#{crmAuthorityRemarkId}) and CRM_AUTHORITY_CHECKED='true') as
+          t left join crm_resource as r 
+          on t.crmAuthorityPublicId=r.CRM_RESOURCE_ID order by r.CRM_RESOURCE_ID asc
+  </sql>
+
+	<select id="selectEmployeeResourceList" parameterType="hashmap" resultType="hashmap">
+	   <include refid="queryFields1" />
+    <if test="start != null and pageSize != null ">
+			limit #{start}, #{pageSize} 
+		</if> 
+	</select>
+	
+	  <select id="selectEmployeeResourceCount" parameterType="hashmap" resultType="int">
+  	select count(*) from (
+		select CRM_AUTHORITY_PUBLIC_ID as crmAuthorityPublicId 
+			from crm_authority as a where a.CRM_AUTHORITY_PARENT_ID=
+			(select CRM_AUTHORITY_ID as crmAuthorityId
+         from crm_authority as a where a.CRM_AUTHORITY_PUBLIC_ID=#{crmAuthorityPublicId} and 
+         a.CRM_AUTHORITY_REMARK_ID=#{crmAuthorityRemarkId}) and CRM_AUTHORITY_CHECKED='true') as t left join crm_resource as r 
+          on t.crmAuthorityPublicId=r.CRM_RESOURCE_ID
+  </select>
+  
+   
+  <select id="selectEmployeeResourceOperationList" parameterType="hashmap" resultType="hashmap">
+select CRM_OPERATION_NAME  from crm_operation where crm_operation.CRM_OPERATION_ID in
+(select CRM_AUTHORITY_PUBLIC_ID from crm_authority where CRM_AUTHORITY_PARENT_ID=(
+select CRM_AUTHORITY_ID from crm_authority where crm_authority.CRM_AUTHORITY_PARENT_ID in 
+(select CRM_AUTHORITY_ID from crm_authority where CRM_AUTHORITY_PUBLIC_ID=#{crmAuthorityPublicId} and CRM_AUTHORITY_REMARK_ID=-100) 
+and crm_authority.CRM_AUTHORITY_CHECKED='true'  
+and crm_authority.CRM_AUTHORITY_PUBLIC_ID=
+(select CRM_RESOURCE_ID from crm_resource where crm_resource.CRM_RESOURCE_MODULE=#{crmResourceModule})) 
+and crm_authority.CRM_AUTHORITY_CHECKED='true')
+  </select>
+  
+
+
+  <!--
+select OPERATION_NAME from d_operation where d_operation.OPERATION_ID in(select 
+AUTHORITY_PUBLIC_ID from d_authority where AUTHORITY_PARENT_ID=(
+select AUTHORITY_ID from d_authority where d_authority.AUTHORITY_PARENT_ID in 
+(select AUTHORITY_ID from d_authority where AUTHORITY_PUBLIC_ID=107 and AUTHORITY_PARENT_ID=-100) and d_authority.AUTHORITY_CHECKED='true'  
+and d_authority.AUTHORITY_PUBLIC_ID=1) and d_authority.AUTHORITY_CHECKED='true')
+    -->
+	
+
+   
+	
+</mapper> 

@@ -1,0 +1,4 @@
+com\chinasoft\ssm\config\jdbcConfig.class
+com\chinasoft\ssm\config\jdbcConfigProperties1.class
+com\chinasoft\ssm\controller\UserController.class
+com\chinasoft\ssm\SsmTestApplication.class

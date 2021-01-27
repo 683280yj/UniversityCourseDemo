@@ -1,0 +1,10 @@
+com\chinasoft\shop\controller\UserController.class
+com\chinasoft\shop\controller\BaseController.class
+com\chinasoft\shop\controller\UserBController.class
+com\chinasoft\shop\service\IUserService.class
+com\chinasoft\shop\tool\MD5Tool.class
+com\chinasoft\shop\tool\IPUtil.class
+com\chinasoft\shop\ShopTestApplication.class
+com\chinasoft\shop\config\WebMvcConfig.class
+com\chinasoft\shop\service\impl\UserServiceImpl.class
+com\chinasoft\shop\dao\UserMapper.class

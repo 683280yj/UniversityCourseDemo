@@ -1,0 +1,5 @@
+com\chinasoft\websocket\controller\DemoController.class
+com\chinasoft\websocket\WebSocketApplication.class
+com\chinasoft\websocket\server\WebSocketServer.class
+com\chinasoft\websocket\config\WebMvcConfig.class
+com\chinasoft\websocket\config\WebSocketConfig.class

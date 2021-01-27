@@ -1,0 +1,3 @@
+com\chinasoft\jpa\domain\AppConfiguration.class
+com\chinasoft\jpa\domain\domain\User.class
+com\chinasoft\jpa\domain\respository\UserRepository.class
